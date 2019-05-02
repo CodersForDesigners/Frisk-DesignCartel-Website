@@ -30,7 +30,7 @@
 <!-- Splash Video Section -->
 <section class="splash-video-section">
 	<div class="row">
-		<img src="https://via.placeholder.com/1920x1080">
+		<img src="media/home/splash-video-thumb.jpg<?php $ver ?>">
 	</div>
 </section>
 <!-- END: Splash Video Section -->
@@ -38,30 +38,32 @@
 
 <!-- Service Section -->
 <section class="service-section">
-	<div class="row">
+	<div class="row space-one-top-bottom">
 		<div class="container">
-			<div class="columns small-12">
-				Inclusive Methods. Exclusive Design.
-				A new-school approach to a timeless practice.
-				<img src="media/home/service.jpg<?php $ver ?>">
+			<div class="columns small-12 medium-5 large-4">
+				<div class="h2 space-min-bottom">Inclusive Methods. Exclusive Design.</div>
+				<div class="h3 text-neutral">A new-school approach to a timeless practice.</div>
+			</div>
+			<div class="columns small-12 medium-offset-1 medium-6 large-7 hide-for-mobile">
+				<div class="image-bg" style="background-image: url('media/home/service.jpg<?php $ver ?>');"></div>
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row space-double-bottom">
 		<div class="container">
-			<div class="columns small-12">
-				ARCHITECTURE & INTERIOR DESIGN
-				Our Architecture and Interior Design studio, in business since 2015, is our bread and butter. Led by Kaushik Kumar, we have designed and executed dozens of projects, bringing our own flavour to each one.
+			<div class="columns small-12 medium-6 large-5 large-offset-1">
+				<div class="label strong text-uppercase fill-off-neutral space-min">Architecture & Interior design</div>
+				<div class="p space-min space-half-bottom">Our Architecture and Interior Design studio, in business since 2015, is our bread and butter. Led by Kaushik Kumar, we have designed and executed dozens of projects, bringing our own flavour to each one.</div>
 
-				IN-DEPTH RESEARCH & DESIGN
-				Exploring the intersections between art and architecture, our Deep Design studio applies design thinking to domains in and beyond architecture. This allows us to work within the latest industry practices. Chandrakanth GM takes charge of this studio.
+				<div class="label strong text-uppercase fill-off-neutral space-min">In-depth Research & Design</div>
+				<div class="p space-min space-half-bottom">Exploring the intersections between art and architecture, our Deep Design studio applies design thinking to domains in and beyond architecture. This allows us to work within the latest industry practices. Chandrakanth GM takes charge of this studio.</div>
 
-				PROJECT MANAGEMENT
-				While we apply our time-tested and watertight project management capabilities to every project, Joshy Thomas and his project management department offer these services as a standalone to other architects or builders as well.
+				<div class="label strong text-uppercase fill-off-neutral space-min">Project Management</div>
+				<div class="p space-min space-half-bottom">While we apply our time-tested and watertight project management capabilities to every project, Joshy Thomas and his project management department offer these services as a standalone to other architects or builders as well.</div>
 
-				3D & VR STUDIO
-				This studio provides cutting-edge 3D and Virtual Reality services as an add-on to any existing project. Similar to our Project Management department, this works as a modular plugin to our own projects, or as a direct service to others.  
+				<div class="label strong text-uppercase fill-off-neutral space-min">3D & VR Studio</div>
+				<div class="p space-min space-half-bottom">This studio provides cutting-edge 3D and Virtual Reality services as an add-on to any existing project. Similar to our Project Management department, this works as a modular plugin to our own projects, or as a direct service to others.</div>
 			</div>
 		</div>
 	</div>
@@ -74,19 +76,27 @@
 <section class="portfolio-section">
 	<div class="featured-project">
 		<div class="row">
-			<img src="media/home/featured-1.jpg<?php $ver ?>">
+			<img src="media/home/project-1-cover.jpg<?php $ver ?>">
 		</div>
-		<div class="row">
+		<div class="row space-half-top-bottom fill-off-neutral">
 			<div class="container">
-				<div class="columns small-12">
-					We believe in designing the bigger picture.
-					Our birds-eye perspective on planning and execution allows us to get our hands dirty when it comes to design.
-
-					Our independently functioning studios work in tandem to execute a collective vision. We also bring in the right collaborators at the right stage, to do the job right.
-
-					That’s why we call ourselves a cartel.
-					BAU-HOUSE
-					[VIEW PROJECT]
+				<div class="row">
+					<div class="columns small-12">
+						<div class="h4 space-half-bottom">We believe in designing the bigger picture.</div>
+						<div class="p space-one-bottom">
+							Our birds-eye perspective on planning and execution allows us to get our hands dirty when it comes to design.
+							<br><br>
+							Our independently functioning studios work in tandem to execute a collective vision. We also bring in the right collaborators at the right stage, to do the job right.
+							<br><br>
+							That’s why we call ourselves a cartel.
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns small-12">
+						<div class="h5">Bau-House</div>
+						<div class="button">View Project</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -94,17 +104,17 @@
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12">
-				Check out our other projects:
+				<div class="h5 space-half-top-bottom">Check out our other projects:</div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row space-double-bottom">
+		<div class="inline-block image-bg" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">The Floating Table Office</div>
+		<div class="inline-block image-bg" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">The Grey Office</div>
+		<div class="inline-block image-bg" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">The Red Office</div>
+		<div class="inline-block image-bg" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">The Rustic House</div>
+		<div class="inline-block image-bg" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">The White Office</div>
 	</div>
-	<div class="block" style="background-image: url('media/home/DesignCartel_Home_4.jpg<?php $ver ?>');">The Floating Table Office</div>
-	<div class="block" style="background-image: url('media/home/DesignCartel_Home_5.jpg<?php $ver ?>');">The Grey Office</div>
-	<div class="block" style="background-image: url('media/home/DesignCartel_Home_6.jpg<?php $ver ?>');">The Red Office</div>
-	<div class="block" style="background-image: url('media/home/DesignCartel_Home_7.jpg<?php $ver ?>');">The Rustic House</div>
-	<div class="block" style="background-image: url('media/home/DesignCartel_Home_8.jpg<?php $ver ?>');">The White Office</div>
 
 </section>
 <!-- END: Portfolio Section -->
@@ -114,10 +124,9 @@
 <section class="about-section">
 	<div class="row">
 		<div class="container">
-			<div class="columns small-12">
-				What do you get when you put two architects and an engineer to work in an office that used to be a music studio in the 80s?
-				
-				An architecture and design firm that functions like a well-oiled machine.
+			<div class="columns small-12 fill-off-neutral space-one-top-bottom">
+				<div class="h3 space-half-bottom">What do you get when you put two architects and an engineer to work in an office that used to be a music studio in the 80s?</div>
+				<div class="p strong">An architecture and design firm that functions like a well-oiled machine.</div>
 			</div>
 		</div>
 	</div>
@@ -141,46 +150,49 @@
 
 
 <!-- Process Section -->
-<section class="process-section">
+<section class="process-section block" style="background-image: url('media/home/process-bg.jpg<?php $ver ?>');">
+	<div class="row">
+		<div class="container">
+			<div class="columns small-12">
+				Here’s a look at how our projects take shape: 
 
-	{BACKGROUND: DesignCartel_Home_10.jpg}
-	Here’s a look at how our projects take shape: 
+				PROJECT BRIEF
+				We start our project with a deep dive into the collective vision.
 
-	PROJECT BRIEF
-	We start our project with a deep dive into the collective vision.
+				We want to hear stories, discuss ideas, and ascertain the true nature of what we’re setting out to do, over some freshly brewed coffee.
 
-	We want to hear stories, discuss ideas, and ascertain the true nature of what we’re setting out to do, over some freshly brewed coffee.
-
-	This journey begins with going into the inspiration for the space, looking at detailed references, and putting a tentative budget together. 
-
-
-	CONCEPTUALISATION
-	Once we have all the information we need and we’ve established our methodology,
-	we get to the drawing board (and sometimes our LEGO blocks).
-
-	This stage is when we sit down with our multi-faceted and experienced collaborators to help finalise the overall project. 
+				This journey begins with going into the inspiration for the space, looking at detailed references, and putting a tentative budget together. 
 
 
-	IMPLEMENTATION
-	Once the concepts are green-lit, we will help you create and issue a Work Order,
-	along with a list of all the finalised items that will go into the project.
+				CONCEPTUALISATION
+				Once we have all the information we need and we’ve established our methodology,
+				we get to the drawing board (and sometimes our LEGO blocks).
 
-	A comprehensive project timeline will help everyone keep up with the project status. 
-
-
-	CONSTRUCTION
-	We’re sticklers for detail and love an organised project.
-
-	To ensure everything is running smoothly, we supervise all collaborators, consultants, and labour. We share updates at every stage of the construction process by comparing the completed work with the project timeline.
-
-	Constant reviews and site visits are also done to ensure quality and consistency. 
+				This stage is when we sit down with our multi-faceted and experienced collaborators to help finalise the overall project. 
 
 
-	HANDOVER
-	A final quality check of everything, including a detailed inspection will be done before all the project documents are shared.
+				IMPLEMENTATION
+				Once the concepts are green-lit, we will help you create and issue a Work Order,
+				along with a list of all the finalised items that will go into the project.
 
-	Once all payments and paperwork are closed, the project is then added to our ever-growing portfolio of unique living, working, and commercial experiences. 
+				A comprehensive project timeline will help everyone keep up with the project status. 
 
+
+				CONSTRUCTION
+				We’re sticklers for detail and love an organised project.
+
+				To ensure everything is running smoothly, we supervise all collaborators, consultants, and labour. We share updates at every stage of the construction process by comparing the completed work with the project timeline.
+
+				Constant reviews and site visits are also done to ensure quality and consistency. 
+
+
+				HANDOVER
+				A final quality check of everything, including a detailed inspection will be done before all the project documents are shared.
+
+				Once all payments and paperwork are closed, the project is then added to our ever-growing portfolio of unique living, working, and commercial experiences. 
+			</div>
+		</div>
+	</div>
 </section>
 <!-- END: Process Section -->
 
