@@ -1,0 +1,57 @@
+/*
+ * Portfolio Section
+ */
+
+.portfolio-section {
+	position: relative;
+}
+
+/* -- Featured Project -- */
+
+.portfolio-section .featured-project {
+	position: relative;
+}
+
+.portfolio-section .featured-project .featured-image {
+	position: relative;
+	margin: var(--space-min) 0;
+}
+
+.portfolio-section .featured-project .featured-image .image-bg {
+	height: 250px;
+}
+
+.portfolio-section .featured-project .featured-content .featured-name {
+	line-height: var(--space-three-quarter);
+}
+
+@media( min-width: 640px )  {
+	.portfolio-section .featured-project .featured-image .image-bg {
+		height: 400px;
+	}
+}
+@media( min-width: 1040px ) {
+	.portfolio-section .featured-project .featured-image {
+		margin: 0;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 50%;
+	}
+
+	.portfolio-section .featured-project .featured-image .image-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: auto;
+	}
+
+	.portfolio-section .featured-project .featured-content .featured-name {
+		line-height: var(--space-half);
+	}
+}
+@media( min-width: 1480px ) {}
