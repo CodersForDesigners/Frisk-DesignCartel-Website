@@ -1,0 +1,25 @@
+/*
+ * Service Section
+ */
+
+.service-section {}
+
+.service-section .service-intro {}
+
+.service-section .service-intro .image-bg {}
+
+@media( min-width: 640px )  {
+	.service-section .service-intro .image-bg {
+		height: 490px;
+	}
+}
+@media( min-width: 1040px ) {
+	.service-section .service-intro .image-bg {
+		height: 450px;
+	}
+}
+@media( min-width: 1480px ) {
+	.service-section .service-intro .image-bg {
+		height: 660px;
+	}
+}

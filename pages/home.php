@@ -41,32 +41,53 @@
 
 <!-- Service Section -->
 <section class="service-section">
-	<div class="row space-one-top-bottom">
+	<div class="service-intro row space-one-top-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-5 large-4">
 				<div class="h2 space-min-bottom">Inclusive Methods. Exclusive Design.</div>
 				<div class="h3 text-neutral">A new-school approach to a timeless practice.</div>
 			</div>
 			<div class="columns small-12 medium-offset-1 medium-6 large-7 hide-for-mobile">
-				<div class="image-bg" style="background-image: url('https://via.placeholder.com/800<?php $ver ?>');"></div>
+				<div class="image-bg" style="background-image: url('media/home/service.jpg<?php $ver ?>');"></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="row space-double-bottom">
 		<div class="container">
-			<div class="columns small-12 medium-6 large-5 large-offset-1">
-				<div class="tab-title label strong text-uppercase fill-off-neutral space-min">Architecture & Interior design</div>
-				<div class="tab-content p space-min space-half-bottom">Our Architecture and Interior Design studio, in business since 2015, is our bread and butter. Led by Kaushik Kumar, we have designed and executed dozens of projects, bringing our own flavour to each one.</div>
-
-				<div class="tab-title label strong text-uppercase fill-off-neutral space-min">In-depth Research & Design</div>
-				<div class="tab-content p space-min space-half-bottom">Exploring the intersections between art and architecture, our Deep Design studio applies design thinking to domains in and beyond architecture. This allows us to work within the latest industry practices. Chandrakanth GM takes charge of this studio.</div>
-
-				<div class="tab-title label strong text-uppercase fill-off-neutral space-min">Project Management</div>
-				<div class="tab-content p space-min space-half-bottom">While we apply our time-tested and watertight project management capabilities to every project, Joshy Thomas and his project management department offer these services as a standalone to other architects or builders as well.</div>
-
-				<div class="tab-title label strong text-uppercase fill-off-neutral space-min">3D & VR Studio</div>
-				<div class="tab-content p space-min space-half-bottom">This studio provides cutting-edge 3D and Virtual Reality services as an add-on to any existing project. Similar to our Project Management department, this works as a modular plugin to our own projects, or as a direct service to others.</div>
+			<div class="tabs columns small-12 large-10 large-offset-1">
+				<div class="row tab-item show">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-neutral button block text-left">Architecture & Interior design</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">Our Architecture and Interior Design studio, in business since 2015, is our bread and butter. Led by Kaushik Kumar, we have designed and executed dozens of projects, bringing our own flavour to each one.</div>
+					</div>
+				</div>
+				<div class="row tab-item">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-neutral button block text-left">In-depth Research & Design</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">Exploring the intersections between art and architecture, our Deep Design studio applies design thinking to domains in and beyond architecture. This allows us to work within the latest industry practices. Chandrakanth GM takes charge of this studio.</div>
+					</div>
+				</div>
+				<div class="row tab-item">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-neutral button block text-left">Project Management</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">While we apply our time-tested and watertight project management capabilities to every project, Joshy Thomas and his project management department offer these services as a standalone to other architects or builders as well.</div>
+					</div>
+				</div>
+				<div class="row tab-item">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-neutral button block text-left">3D & VR Studio</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">This studio provides cutting-edge 3D and Virtual Reality services as an add-on to any existing project. Similar to our Project Management department, this works as a modular plugin to our own projects, or as a direct service to others.</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -110,7 +131,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="other-projects space-one-bottom">
+	<div class="other-project space-one-bottom">
 		<div class="row">
 			<div class="container">
 				<div class="columns small-12">
@@ -118,12 +139,28 @@
 				</div>
 			</div>
 		</div>
-		<div class="row space-one-bottom">
-			<div class="inline-block image-bg" style="background-image: url('https://via.placeholder.com/800<?php $ver ?>');">The Floating Table Office</div>
-			<div class="inline-block image-bg" style="background-image: url('https://via.placeholder.com/800<?php $ver ?>');">The Grey Office</div>
-			<div class="inline-block image-bg" style="background-image: url('https://via.placeholder.com/800<?php $ver ?>');">The Red Office</div>
-			<div class="inline-block image-bg" style="background-image: url('https://via.placeholder.com/800<?php $ver ?>');">The Rustic House</div>
-			<div class="inline-block image-bg" style="background-image: url('https://via.placeholder.com/800<?php $ver ?>');">The White Office</div>
+		<div class="row carousel space-half-bottom">
+			<div class="project-list carousel-list text-light">
+				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">
+					<div class="h5 space-half">The Floating Table Office</div>
+				</div>
+				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">
+					<div class="h5 space-half">The Grey Office</div>
+				</div>
+				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">
+					<div class="h5 space-half">The Red Office</div>
+				</div>
+				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">
+					<div class="h5 space-half">The Rustic House</div>
+				</div>
+				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">
+					<div class="h5 space-half">The White Office</div>
+				</div>
+			</div>
+			<div class="carousel-controls">
+				<div class="button prev fill-light">Previous</div>
+				<div class="button next fill-light">Next</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -168,48 +205,70 @@
 			<div class="columns small-12">
 				<div class="h3 space-half-bottom">Here’s a look at how our projects take shape:</div>
 			</div>
-			<div class="columns small-12 medium-6 large-5 large-offset-1">
-				<div class="tab-title label strong text-uppercase fill-off-light space-min">project brief</div>
-				<div class="tab-content p space-min space-half-bottom">
-					<div class="h5">We start our project with a deep dive into the collective vision.</div>
-					<br>
-					We want to hear stories, discuss ideas, and ascertain the true nature of what we’re setting out to do, over some freshly brewed coffee.
-					<br><br>
-					This journey begins with going into the inspiration for the space, looking at detailed references, and putting a tentative budget together. 
+			<div class="tabs columns small-12 large-10 large-offset-1">
+				<div class="row tab-item show">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-light button block text-left">Project Brief</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">
+							<div class="h5">We start our project with a deep dive into the collective vision.</div>
+							<br>
+							We want to hear stories, discuss ideas, and ascertain the true nature of what we’re setting out to do, over some freshly brewed coffee.
+							<br><br>
+							This journey begins with going into the inspiration for the space, looking at detailed references, and putting a tentative budget together. 
+						</div>
+					</div>
 				</div>
-
-
-				<div class="tab-title label strong text-uppercase fill-off-light space-min">conceptualisation</div>
-				<div class="tab-content p space-min space-half-bottom">
-					<div class="h5">Once we have all the information we need and we’ve established our methodology, we get to the drawing board (and sometimes our LEGO blocks).</div>
-					<br>
-					This stage is when we sit down with our multi-faceted and experienced collaborators to help finalise the overall project. 
+				<div class="row tab-item">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-light button block text-left">Conceptualisation</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">
+							<div class="h5">Once we have all the information we need and we’ve established our methodology, we get to the drawing board (and sometimes our LEGO blocks).</div>
+							<br>
+							This stage is when we sit down with our multi-faceted and experienced collaborators to help finalise the overall project. 
+						</div>
+					</div>
 				</div>
-
-
-				<div class="tab-title label strong text-uppercase fill-off-light space-min">implementation</div>
-				<div class="tab-content p space-min space-half-bottom">
-					<div class="h5">Once the concepts are green-lit, we will help you create and issue a Work Order, along with a list of all the finalised items that will go into the project.</div>
-					<br>
-					A comprehensive project timeline will help everyone keep up with the project status. 
+				<div class="row tab-item">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-light button block text-left">Implementation</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">
+							<div class="h5">Once the concepts are green-lit, we will help you create and issue a Work Order, along with a list of all the finalised items that will go into the project.</div>
+							<br>
+							A comprehensive project timeline will help everyone keep up with the project status. 
+						</div>
+					</div>
 				</div>
-
-
-				<div class="tab-title label strong text-uppercase fill-off-light space-min">construction</div>
-				<div class="tab-content p space-min space-half-bottom">
-					<div class="h5">We’re sticklers for detail and love an organised project.</div>
-					<br>
-					To ensure everything is running smoothly, we supervise all collaborators, consultants, and labour. We share updates at every stage of the construction process by comparing the completed work with the project timeline.
-					<br><br>
-					Constant reviews and site visits are also done to ensure quality and consistency. 
+				<div class="row tab-item">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-light button block text-left">Construction</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">
+							<div class="h5">We’re sticklers for detail and love an organised project.</div>
+							<br>
+							To ensure everything is running smoothly, we supervise all collaborators, consultants, and labour. We share updates at every stage of the construction process by comparing the completed work with the project timeline.
+							<br><br>
+							Constant reviews and site visits are also done to ensure quality and consistency. 
+						</div>
+					</div>
 				</div>
-
-
-				<div class="tab-title label strong text-uppercase fill-off-light space-min">handover</div>
-				<div class="tab-content p space-min space-half-bottom">
-					<div class="h5">A final quality check of everything, including a detailed inspection will be done before all the project documents are shared.</div>
-					<br>
-					Once all payments and paperwork are closed, the project is then added to our ever-growing portfolio of unique living, working, and commercial experiences. 
+				<div class="row tab-item">
+					<div class="columns small-12 medium-6">
+						<div class="tab-title fill-off-light button block text-left">Handover</div>
+					</div>
+					<div class="columns small-12 medium-6">
+						<div class="tab-content p">
+							<div class="h5">A final quality check of everything, including a detailed inspection will be done before all the project documents are shared.</div>
+							<br>
+							Once all payments and paperwork are closed, the project is then added to our ever-growing portfolio of unique living, working, and commercial experiences. 
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -227,8 +286,28 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<!-- Insert Testimonial Carousel Here -->
+	<div class="row carousel space-half-bottom">
+		<div class="testimonial-list carousel-list text-light">
+			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">
+				<div class="h5 space-half">The Floating Table Office</div>
+			</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">
+				<div class="h5 space-half">The Grey Office</div>
+			</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">
+				<div class="h5 space-half">The Red Office</div>
+			</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">
+				<div class="h5 space-half">The Rustic House</div>
+			</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">
+				<div class="h5 space-half">The White Office</div>
+			</div>
+		</div>
+		<div class="carousel-controls">
+			<div class="button prev fill-light">Previous</div>
+			<div class="button next fill-light">Next</div>
+		</div>
 	</div>
 </section>
 <!-- END: Testimonial Section -->

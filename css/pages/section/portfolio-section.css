@@ -55,3 +55,57 @@
 	}
 }
 @media( min-width: 1480px ) {}
+
+
+
+
+
+
+/* -- Other Project -- */
+
+.portfolio-section .other-project {
+	position: relative;
+}
+
+.portfolio-section .other-project .project-list {}
+
+.portfolio-section .other-project .project-list .project-item {
+	width: calc( 3 * var(--space-one) );
+	margin-right: var(--space-min);
+	height: 220px;
+}
+
+.portfolio-section .other-project .project-list .project-item:last-child {
+	margin-right: 0;
+}
+
+@media( min-width: 640px )  {
+	.portfolio-section .other-project .project-list .project-item {
+		width: calc( 4 * var(--space-one) );
+		height: 280px;
+	}
+}
+@media( min-width: 1040px ) {
+	.portfolio-section .other-project .project-list .project-item {
+		width: calc( 3 * var(--space-one) );
+		height: 340px;
+	}
+}
+@media( min-width: 1480px ) {
+	.portfolio-section .other-project .project-list .project-item {
+		height: 480px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
