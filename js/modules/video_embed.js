@@ -1,71 +1,77 @@
 
 /*
+ *
+ * This script handles embedding of videos
+ *
+ */
 
- YouTube embeds across the site are initialized and loaded ↵
- after the DOM is "ready". This is so the page loading isn't slowed down.
+/*
+ * Inject iframes into the video containers.
+ * 	These iframes hold urls to the videos hosted on YouTube.
+ */
+function initialiseVideoEmbeds () {
+	$( ".js_video_embed" ).each( function ( _i, el ) {
+		var $iframe = $( "<iframe>" )
+		$iframe.attr( {
+			// Add the origin parameter
+	 		// This is to protect against malicious third-party JavaScript being
+	 		// injected into the page and hijacking control of the YouTube player.
+			src: "https://www.youtube.com/embed/" + el.dataset.src + "?enablejsapi=1&html5=1&mute=1&color=white&controls=0&disablekb=1&fs=0&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&origin" + location.origin,
+			frameborder: 0,
+			allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+			allowfullscreen: ""
+		} );
+		$( el ).append( $iframe );
+	} );
+}
 
- Page loads can be synchronous or asynchronous.
-
- Markup structure of the embed are like so,
-
-	<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/lncVHzsc_QA?rel=0&amp;showinfo=0" data-ga-video-src="Sample - Video">
-		<div class="youtube_load"></div>
-		<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-	</div>
-
-As you can see, we store the video URL in a data-src attribute of the enclosing element.
-That URL is then plugged into the iframe element asynchronously.
-
-*/
-
-// takes a DOM element as input
-// copies the URL from its "data-src" attribute
-// and attaches to the `src` attribute of the iframe element that is a descendant of it
+/*
+ * Sets the containing iframe's src attribute
+ * 	to what's in its equivalent data attribute
+ */
 function setVideoEmbed ( domEl ) {
-
-	$el = $( domEl );
-	var src = $el.data( 'src' );
-	$el.find( 'iframe' ).attr( 'src', src );
-
+	var $el = $( domEl );
+	var src = $el.find( "iframe" ).data( "src" );
+	if ( src )
+		$el.find( "iframe" ).attr( "src", src );
 }
 
-// takes a DOM element as input
-// removes the `src` attribute of the iframe element that is a descendant of it
+/*
+ * Unsets the containing iframe's src attribute to an empty value
+ */
 function unsetVideoEmbed ( domEl ) {
-
-	$( domEl ).find( 'iframe' ).attr( 'src', '' );
-
+	var $el = $( domEl );
+	var src = $el.find( "iframe" ).attr( "src" );
+	$el.find( "iframe" ).data( "src", src );
 }
 
-// initializes the video embeds asynchronously after a timeout
-function initVideoEmbeds () {
-
-	window.setTimeout(function() {
-		$( '.youtube_embed:not(.js_in_carousel)' ).each( function () {
-			setVideoEmbed( this );
-		} );
-		$( '.facebook_embed' ).each( function () {
-			setVideoEmbed( this );
-		} );
-	}, 3000);
+/*
+ * Setup the YouTube Iframe API
+ * Store references to video players
+ * 	in data attributes of their respective video containers.
+ */
+function setupYoutubePlayers () {
 
 	// If there isn't a background YouTube embed, move on
-	if ( $( ".js_embed_bg_yt" ).length == 0 )
+	if ( $( ".js_video_get_player" ).length == 0 )
 		return;
 
 	// If there is a background YouTube embed, then
 	// 1. Load the YouTube API library (asynchronously)
+	//  	reference: https://developers.google.com/youtube/iframe_api_reference
 	var scriptElement = document.createElement( "script" );
 	scriptElement.src = "https://www.youtube.com/iframe_api";
 	$( "script" ).last().after( scriptElement );
 
 	// 2. Setup the YouTube video, its playback options and hooks event handling
 	function onYouTubeIframeAPIReady () {
-		new YT.Player( "youtube_video_embed", {
-			events: {
-				onReady: onPlayerReady,
-				onStateChange: onPlayerStateChange
-			}
+		$( ".js_video_get_player iframe" ).each( function ( _i, domVideo ) {
+			new YT.Player( domVideo, {
+				events: {
+					onReady: onPlayerReady,
+					onStateChange: onPlayerStateChange
+				}
+			} );
 		} );
 	}
 	// This function needs to exposed as a global
@@ -73,17 +79,21 @@ function initVideoEmbeds () {
 
 	// When the YouTube video player is ready, this function is run
 	function onPlayerReady ( event ) {
-		// We wait for a moment and then play the video.
-		// This is so that it autoplays on mobile devices
-		setTimeout( function () {
-		  	event.target.playVideo();
-		}, 1500 )
+		var $videoContainer = $( event.target.a ).closest( ".js_video_get_player" );
+		$videoContainer.data( "player", event.target );
+		if ( $videoContainer.data( "autoplay" ) === true )
+			event.target.playVideo();
 	}
 
 	// Whenever the YouTube video player's state changes, this function is run
 	function onPlayerStateChange ( event ) {
-		// console.log( event.data )
-		if ( event.data == YT.PlayerState.ENDED )
+		var domVideo = event.target.a;
+		var $video = $( domVideo );
+		var $videoContainer = $video.closest( ".js_video_get_player" );
+		var loopVideo = $videoContainer.data( "loop" ) === true;
+		if ( event.data == YT.PlayerState.PLAYING )
+			$videoContainer.find( ".video-embed-placeholder" ).addClass( "opacity-0" );
+		if ( loopVideo && event.data == YT.PlayerState.ENDED )
 			event.target.seekTo( 0 )
 	}
 
@@ -91,11 +101,12 @@ function initVideoEmbeds () {
 
 $( function () {
 
-	// initializes and loads the video embeds on **synchronous** page loads
-	initVideoEmbeds();
-
-	// initializes and loads the video embeds on **asynchronous** page loads
-	// hooks onto a custom event that is emitted, "page::load"
-	$( document ).on( "page::load", initVideoEmbeds );
+	// Wait for a bit
+	waitFor( 3 )
+		.then( function () {
+			// Initialize, load and setup the video embeds and their players
+			initialiseVideoEmbeds();
+			setupYoutubePlayers();
+		} )
 
 } );

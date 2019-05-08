@@ -50,9 +50,8 @@
 <!-- Splash Video Section -->
 <section class="splash-video-section">
 	<div class="row">
-		<div class="youtube-embed-bg js_embed_bg_yt ga_video" data-ga-video-src="Sample - Video">
-			<div class="youtube_load"></div>
-			<iframe id="youtube_video_embed" width="1280" height="1200" src="https://www.youtube.com/embed/MUxY21qqEhI?enablejsapi=1&html5=1&mute=1&color=white&controls=0&disablekb=1&fs=0&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&end=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="MUxY21qqEhI" data-loop="true" data-autoplay="true">
+			<div class="video-embed-placeholder" style="background-image: url( 'media/home/splash-video-thumb.jpg' );"></div>
 		</div>
 	</div>
 </section>
@@ -231,7 +230,7 @@
 							<br>
 							We want to hear stories, discuss ideas, and ascertain the true nature of what we’re setting out to do, over some freshly brewed coffee.
 							<br><br>
-							This journey begins with going into the inspiration for the space, looking at detailed references, and putting a tentative budget together. 
+							This journey begins with going into the inspiration for the space, looking at detailed references, and putting a tentative budget together.
 						</div>
 					</div>
 				</div>
@@ -243,7 +242,7 @@
 						<div class="tab-content p">
 							<div class="h5">Once we have all the information we need and we’ve established our methodology, we get to the drawing board (and sometimes our LEGO blocks).</div>
 							<br>
-							This stage is when we sit down with our multi-faceted and experienced collaborators to help finalise the overall project. 
+							This stage is when we sit down with our multi-faceted and experienced collaborators to help finalise the overall project.
 						</div>
 					</div>
 				</div>
@@ -255,7 +254,7 @@
 						<div class="tab-content p">
 							<div class="h5">Once the concepts are green-lit, we will help you create and issue a Work Order, along with a list of all the finalised items that will go into the project.</div>
 							<br>
-							A comprehensive project timeline will help everyone keep up with the project status. 
+							A comprehensive project timeline will help everyone keep up with the project status.
 						</div>
 					</div>
 				</div>
@@ -269,7 +268,7 @@
 							<br>
 							To ensure everything is running smoothly, we supervise all collaborators, consultants, and labour. We share updates at every stage of the construction process by comparing the completed work with the project timeline.
 							<br><br>
-							Constant reviews and site visits are also done to ensure quality and consistency. 
+							Constant reviews and site visits are also done to ensure quality and consistency.
 						</div>
 					</div>
 				</div>
@@ -281,7 +280,7 @@
 						<div class="tab-content p">
 							<div class="h5">A final quality check of everything, including a detailed inspection will be done before all the project documents are shared.</div>
 							<br>
-							Once all payments and paperwork are closed, the project is then added to our ever-growing portfolio of unique living, working, and commercial experiences. 
+							Once all payments and paperwork are closed, the project is then added to our ever-growing portfolio of unique living, working, and commercial experiences.
 						</div>
 					</div>
 				</div>
