@@ -20,4 +20,5 @@
 <link rel="stylesheet" type="text/css" href="css/pages/section/service-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/portfolio-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/about-section.css<?php echo $ver ?>">
+<link rel="stylesheet" type="text/css" href="css/pages/section/testimonial-section.css<?php echo $ver ?>">
 <link rel="stylesheet" type="text/css" href="css/pages/section/contact-section.css<?php echo $ver ?>">

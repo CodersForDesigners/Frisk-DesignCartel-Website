@@ -682,13 +682,18 @@ select { cursor: pointer; }
 .carousel .carousel-controls .next {
 	text-indent: -1000000px;
 	/*box-shadow: none;*/
+	background-size: 32px 32px;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .carousel .carousel-controls .prev {
 	margin-right: var(--space-min);
+	background-image: url('../media/icons/icon-left.svg');
 }
 
 .carousel .carousel-controls .next {
+	background-image: url('../media/icons/icon-right.svg');
 }
 
 

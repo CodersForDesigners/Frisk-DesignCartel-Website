@@ -52,7 +52,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="row space-double-bottom">
 		<div class="container">
 			<div class="tabs columns small-12 large-10 large-offset-1">
@@ -91,7 +90,6 @@
 			</div>
 		</div>
 	</div>
-
 </section>
 <!-- END: Service Section -->
 
@@ -177,11 +175,9 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="row about-image">
 		<div class="block image-bg" style="background-image: url('media/home/about.jpg<?php $ver ?>');"></div>
 	</div>
-
 	<div class="row about-content">
 		<div class="container">
 			<div class="columns small-12 large-4 large-offset-1">
@@ -193,7 +189,6 @@
 			</div>
 		</div>
 	</div>
-
 </section>
 <!-- END: About Section -->
 
@@ -278,30 +273,65 @@
 
 
 <!-- Testimonial Section -->
-<section class="testimonial-section space-double-top-bottom">
+<section class="testimonial-section space-one-top-bottom">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12">
-				<div class="h4">Every project is an opportunity to do great work with great people.</div>
+				<div class="h4 space-half-top-bottom">Every project is an opportunity to do great work with great people.</div>
 			</div>
 		</div>
 	</div>
 	<div class="row carousel space-half-bottom">
 		<div class="testimonial-list carousel-list text-light">
-			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">
-				<div class="h5 space-half">The Floating Table Office</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</div>
+				<div class="name p strong space-min-bottom">Firstname Lastname</div>
+				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">
-				<div class="h5 space-half">The Grey Office</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</div>
+				<div class="name p strong space-min-bottom">Firstname Lastname</div>
+				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">
-				<div class="h5 space-half">The Red Office</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</div>
+				<div class="name p strong space-min-bottom">Firstname Lastname</div>
+				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">
-				<div class="h5 space-half">The Rustic House</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</div>
+				<div class="name p strong space-min-bottom">Firstname Lastname</div>
+				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">
-				<div class="h5 space-half">The White Office</div>
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</div>
+				<div class="name p strong space-min-bottom">Firstname Lastname</div>
+				<div class="company p">XYZ Company</div>
 			</div>
 		</div>
 		<div class="carousel-controls">
