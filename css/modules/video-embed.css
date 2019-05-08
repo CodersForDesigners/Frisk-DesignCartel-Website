@@ -1,14 +1,7 @@
-/*
-<!-- Sample Markup -->
-<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/lncVHzsc_QA?rel=0&amp;showinfo=0" data-ga-video-src="Sample - Video">
-	<div class="youtube_load"></div>
-	<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-</div>
-*/
 
-/* -- responsive youtube embed -- */
+/* -- Responsive Embeds -- */
 
-.youtube_embed {
+.video-embed {
 	position: relative;
 	height: 0;
 	padding-top: 56.1%; /* 16:9 */
@@ -17,7 +10,7 @@
 	background-color: #000000;
 }
 
-.youtube_embed iframe {
+.video-embed iframe {
 	position: absolute;
 	z-index: 2;
 	top: 0;
@@ -26,32 +19,33 @@
 	height: 100%;
 }
 
-.youtube-embed-bg {
-	position: relative;
-	height: 0;
-	padding-top: 56.1%; /* 16:9 */
-	padding-bottom: 0.15%;
-	font-size: 0;
-	background-color: #000000;
+.video-embed-bg {
 	pointer-events: none;
 	overflow: hidden;
 }
-.youtube-embed-bg * {
+.video-embed-bg * {
 	pointer-events: none;
 }
-
-.youtube-embed-bg iframe {
-	position: absolute;
-	z-index: 2;
+.video-embed-bg iframe {
 	top: 50%;
-	left: 0;
-	width: 100%;
 	height: 200%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	transform: translateY( -50% );
 }
 
-.youtube_load {
+.video-embed-placeholder {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index: 3;
+	transition: opacity 0.4s ease-in-out;
+}
+
+.video-loading-indicator {
 	position: absolute;
 	z-index: 1;
 	top: 50%;
@@ -92,6 +86,3 @@
 	75% {box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;}
 	87.5% {box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;}
 }
-
-
-
