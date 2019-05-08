@@ -25,6 +25,17 @@
 	background-size: contain;
 }
 
+.testimonial-section .testimonial-list .testimonial-item .content:before {
+	content: "\201C";
+	position: absolute;
+	margin-left: -8px;
+}
+.testimonial-section .testimonial-list .testimonial-item .content:after {
+	content: "\201D";
+	position: absolute;
+	margin-right: -8px;
+}
+
 @media( min-width: 640px )  {
 	.testimonial-section .testimonial-list .testimonial-item {
 		width: calc( 5 * var(--space-one) );

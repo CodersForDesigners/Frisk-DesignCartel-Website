@@ -123,7 +123,7 @@
  */
 
 .pointer {
-	pointer-events: initial;
+	pointer-events: auto;
 }
 
 .no-pointer {
@@ -140,6 +140,18 @@
 	cursor: pointer;
 }
 
+
+
+/*
+ * Selection
+ */
+/* Prevent element from being selectable */
+.unselectable {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
 
 /*
@@ -213,14 +225,30 @@
 }
 
 
+@media ( max-width: 1039px ) {
+	.hide-for-tablet {
+		display: none !important;
+	}
+}
+
+.show-for-tablet { display: none !important; }
+
+@media ( max-width: 1039px ) {
+	.show-for-tablet {
+		display: block !important;
+	}
+}
+
+
 
 /*
  * Form error handling
  */
 
 .form-error {
-	/*border-color: #FF2A2E !important;*/
-	background-color: rgba(255, 42, 46, 0.5) !important;
+	/*background-image: linear-gradient( to top, rgba( 255, 42, 46, 0.5 ), rgba( 255, 42, 46, 0.5 ) 5px, transparent 5px );*/
+	border-right: 5px solid rgba( 255, 42, 46, 0.75 );
+	border-bottom: 5px solid rgba( 255, 42, 46, 0.75 );
 }
 
 input[type="submit"].loading,
