@@ -73,8 +73,8 @@
 	</div>
 	<div class="row space-double-bottom">
 		<div class="container">
-			<div class="tabs columns small-12 large-10 large-offset-1">
-				<div class="row tab-item show">
+			<div class="tabs columns small-12 large-10 large-offset-1 js_tabs_container">
+				<div class="row tab-item show js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">Architecture & Interior design</div>
 					</div>
@@ -82,7 +82,7 @@
 						<div class="tab-content p">Our Architecture and Interior Design studio, in business since 2015, is our bread and butter. Led by Kaushik Kumar, we have designed and executed dozens of projects, bringing our own flavour to each one.</div>
 					</div>
 				</div>
-				<div class="row tab-item">
+				<div class="row tab-item js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">In-depth Research & Design</div>
 					</div>
@@ -90,7 +90,7 @@
 						<div class="tab-content p">Exploring the intersections between art and architecture, our Deep Design studio applies design thinking to domains in and beyond architecture. This allows us to work within the latest industry practices. Chandrakanth GM takes charge of this studio.</div>
 					</div>
 				</div>
-				<div class="row tab-item">
+				<div class="row tab-item js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">Project Management</div>
 					</div>
@@ -98,7 +98,7 @@
 						<div class="tab-content p">While we apply our time-tested and watertight project management capabilities to every project, Joshy Thomas and his project management department offer these services as a standalone to other architects or builders as well.</div>
 					</div>
 				</div>
-				<div class="row tab-item">
+				<div class="row tab-item js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">3D & VR Studio</div>
 					</div>
@@ -219,8 +219,8 @@
 			<div class="columns small-12">
 				<div class="h3 space-half-bottom">Here’s a look at how our projects take shape:</div>
 			</div>
-			<div class="tabs columns small-12 large-10 large-offset-1">
-				<div class="row tab-item show">
+			<div class="tabs columns small-12 large-10 large-offset-1 js_tabs_container">
+				<div class="row tab-item show js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Project Brief</div>
 					</div>
@@ -234,7 +234,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item">
+				<div class="row tab-item js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Conceptualisation</div>
 					</div>
@@ -246,7 +246,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item">
+				<div class="row tab-item js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Implementation</div>
 					</div>
@@ -258,7 +258,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item">
+				<div class="row tab-item js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Construction</div>
 					</div>
@@ -272,7 +272,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item">
+				<div class="row tab-item js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Handover</div>
 					</div>
