@@ -31,12 +31,19 @@
  */
 
 :root {
-	--light : #FFFFFF;
+	/*--light : #FFFFFF;
 	--off-light : #F0F7F7;
 	--neutral : #95A2A6;
 	--off-neutral : #D5E0E3;
 	--dark : #282F33;
 	--off-dark : #626D73;
+	--black : #1D2225;*/
+	--light : #FFFFFF;
+	--off-light : #F2F0EF;
+	--neutral : #BABBB1;
+	--off-neutral : #DFD8CD;
+	--dark : #282F33;
+	--off-dark : #474646;
 	--black : #1D2225;
 
 	--container-width: 300px;
@@ -117,7 +124,7 @@ a * { pointer-events: none; }
 
 /* -- Weights -- */
 
-.w-100 { font-weight: 100; }
+/*.w-100 { font-weight: 100; }*/
 .w-300 { font-weight: 300; }
 .w-400 { font-weight: 400; }
 .w-700 { font-weight: 700; }

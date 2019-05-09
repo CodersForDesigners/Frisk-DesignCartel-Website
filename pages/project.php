@@ -28,7 +28,7 @@
 		<div class="row cover-image">
 			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php $ver ?>');"></div>
 		</div>
-		<div class="row project-content space-one-top-bottom fill-off-neutral">
+		<div class="row project-content space-one-top-bottom fill-off-light">
 			<div class="container">
 				<div class="row">
 					<div class="columns small-12 large-5 large-offset-7">
@@ -117,19 +117,19 @@
 		<div class="row carousel space-half-bottom">
 			<div class="project-list carousel-list text-light">
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Floating Table Office</div>
+					<div class="title h5 space-half">The Floating Table Office</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Grey Office</div>
+					<div class="title h5 space-half">The Grey Office</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Red Office</div>
+					<div class="title h5 space-half">The Red Office</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Rustic House</div>
+					<div class="title h5 space-half">The Rustic House</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The White Office</div>
+					<div class="title h5 space-half">The White Office</div>
 				</div>
 			</div>
 			<div class="carousel-controls">

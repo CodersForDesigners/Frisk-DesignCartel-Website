@@ -93,7 +93,7 @@
 		<div class="row featured-image">
 			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php $ver ?>');"></div>
 		</div>
-		<div class="row featured-content space-one-top-bottom fill-off-neutral">
+		<div class="row featured-content space-one-top-bottom fill-off-light">
 			<div class="container">
 				<div class="row">
 					<div class="columns small-12 large-5 large-offset-7">
@@ -114,7 +114,7 @@
 								<div class="h5 featured-name">Bau-House</div>
 							</div>
 							<div class="columns small-12 medium-6 medium-offset-1">
-								<div class="button">View Project</div>
+								<div class="button fill-off-neutral">View Project</div>
 							</div>
 						</div>
 					</div>
@@ -133,19 +133,19 @@
 		<div class="row carousel space-half-bottom">
 			<div class="project-list carousel-list text-light">
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Floating Table Office</div>
+					<div class="title h5 space-half">The Floating Table Office</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Grey Office</div>
+					<div class="title h5 space-half">The Grey Office</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Red Office</div>
+					<div class="title h5 space-half">The Red Office</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The Rustic House</div>
+					<div class="title h5 space-half">The Rustic House</div>
 				</div>
 				<div class="project-item carousel-list-item image-bg inline-top" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">
-					<div class="h5 space-half">The White Office</div>
+					<div class="title h5 space-half">The White Office</div>
 				</div>
 			</div>
 			<div class="carousel-controls">
@@ -187,7 +187,7 @@
 
 
 <!-- Process Section -->
-<section class="process-section block space-one-top-bottom fill-off-neutral" style="background-image: url('https://via.placeholder.com/800<?php $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
+<section class="process-section block space-one-top-bottom fill-off-neutral" style="background-image: url('media/home/process-bg.jpg<?php $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12">
@@ -276,7 +276,7 @@
 	</div>
 	<div class="row carousel space-half-bottom">
 		<div class="testimonial-list carousel-list text-light">
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half">
 				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -286,7 +286,7 @@
 				<div class="name p strong space-min-bottom">Firstname Lastname</div>
 				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half">
 				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -296,7 +296,7 @@
 				<div class="name p strong space-min-bottom">Firstname Lastname</div>
 				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half">
 				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -306,7 +306,7 @@
 				<div class="name p strong space-min-bottom">Firstname Lastname</div>
 				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half">
 				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -316,7 +316,7 @@
 				<div class="name p strong space-min-bottom">Firstname Lastname</div>
 				<div class="company p">XYZ Company</div>
 			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-neutral space-half">
+			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half">
 				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -340,7 +340,7 @@
 <section class="contact-section">
 	<div class="contact-intro row">
 		<div class="container">
-			<div class="frame columns small-12 medium-10 large-5 fill-off-neutral space-one-top space-half-bottom">
+			<div class="frame columns small-12 medium-10 large-5 fill-off-light space-one-top space-half-bottom">
 				<div class="h3 space-half-bottom">We’re the only cartel in the world that will tell you our location.</div>
 				<div class="p space-min-bottom">
 					198 Link Road, Seshadripuram<br>
@@ -407,7 +407,7 @@
 						<div class="form-item columns small-6 medium-3">
 							<div class="label">
 								<span class="visuallyhidden">Send</span>
-								<button class="button block">Send</button>
+								<button class="button block fill-off-neutral">Send</button>
 							</div>
 						</div>
 						<div class="form-item columns small-12 medium-9">

@@ -11,7 +11,7 @@
 .contact-section .contact-intro {
 	position: relative;
 	z-index: 2;
-	background-color: var(--off-neutral);
+	background-color: var(--off-light);
 }
 
 /* -- Contact Form -- */

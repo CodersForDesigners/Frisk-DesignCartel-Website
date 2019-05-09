@@ -85,6 +85,24 @@
 	margin-right: 0;
 }
 
+.project-section .other-project .project-list .project-item .title {
+	position: relative;
+	z-index: 2;
+}
+
+.project-section .other-project .project-list .project-item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.35;
+}
+
 @media( min-width: 640px )  {
 	.project-section .other-project .project-list .project-item {
 		width: calc( 4 * var(--space-one) );
