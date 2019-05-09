@@ -6,6 +6,8 @@
 	overflow-x: hidden;
 }
 
+#page-content { margin-top: var(--space-one); }
+
 .outer-container {
 	position: relative;
 	width: 100%;

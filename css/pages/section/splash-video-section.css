@@ -2,7 +2,6 @@
  * Splash Video Section
  */
 
-.splash-video-section { margin-top: var(--space-one); }
 
 @media( min-width: 640px )  {}
 @media( min-width: 1040px ) {}

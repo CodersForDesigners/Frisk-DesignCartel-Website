@@ -21,32 +21,6 @@
 <!-- END: Sample Section -->
 
 
-<!-- Header Section -->
-<section class="header-section fill-light">
-	<div class="row">
-		<div class="container">
-			<div class="logo columns small-6">
-				<img src="media/icons/dc-logo.svg<?php $ver ?>">
-			</div>
-			<div class="navigation columns small-6">
-				<div class="nav-tray">
-					+ 91 98765 43210
-					Services
-					Portfolio
-					About
-					Process
-					Contact Us
-				</div>
-				<div class="nav-toggle">
-					<button class="fill-light">Menu</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Header Section -->
-
-
 <!-- Splash Video Section -->
 <section class="splash-video-section">
 	<div class="row">
@@ -448,27 +422,7 @@
 <!-- END: Contact Section -->
 
 
-<!-- Footer Section -->
-<section class="footer-section fill-off-neutral space-half-top-bottom">
-	<div class="row">
-		<div class="container">
-			<div class="social columns small-12 medium-3 inline-middle">
-				<a class="inline-top" href="https://twitter.com/DesignCartelBlr" target="_blank"><img src="media/icons/icon-twitter.svg<?php $var ?>"></a>
-				<a class="inline-top" href="https://in.linkedin.com/company/designcartel" target="_blank"><img src="media/icons/icon-linkedin.svg<?php $var ?>"></a>
-				<a class="inline-top" href="https://www.facebook.com/designcartel.in" target="_blank"><img src="media/icons/icon-facebook.svg<?php $var ?>"></a>
-				<a class="inline-top" href="https://www.instagram.com/designcartelindia/" target="_blank"><img src="media/icons/icon-instagram.svg<?php $var ?>"></a>
-				<a class="inline-top" href="https://www.behance.net/design-cartel" target="_blank"><img src="media/icons/icon-behance.svg<?php $var ?>"></a>
-			</div>
-			<div class="signature columns small-12 medium-6 inline-middle">
-				<div class="label text-center">Architecture | Interior Design | Project Management <span class="hide-for-tablet">|</span> Bangalore, India</div>
-			</div>
-			<div class="logo columns small-12 medium-3 inline-middle">
-				<img src="media/icons/dc-logo.svg<?php $ver ?>">
-			</div>
-		</div>
-	</div>
-</section>
-<!-- END: Footer Section -->
+
 
 
 <!-- Sample Section -->

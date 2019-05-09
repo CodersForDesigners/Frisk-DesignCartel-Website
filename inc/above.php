@@ -31,3 +31,8 @@ $ver = '?v=20190502';
 
 		<!-- Page Content -->
 		<div id="page-content">
+
+			<?php
+			/* -- Design Cartel Header -- */
+				require_once __DIR__ . '/dc-header.php';
+			?>
