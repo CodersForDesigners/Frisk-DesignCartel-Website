@@ -16,7 +16,7 @@ function initialiseVideoEmbeds () {
 			// Add the origin parameter
 	 		// This is to protect against malicious third-party JavaScript being
 	 		// injected into the page and hijacking control of the YouTube player.
-			src: "https://www.youtube.com/embed/" + el.dataset.src + "?enablejsapi=1&html5=1&mute=1&color=white&controls=0&disablekb=1&fs=0&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&origin" + location.origin,
+			src: "https://www.youtube.com/embed/" + el.dataset.src + "?enablejsapi=1&html5=1&mute=1&color=white&controls=0&disablekb=1&fs=0&autoplay=0&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&origin=" + location.origin,
 			frameborder: 0,
 			allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
 			allowfullscreen: ""
