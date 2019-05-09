@@ -1,11 +1,11 @@
 <!-- DC Header Section -->
-<section class="header-section fill-light">
+<section class="header-section fill-light"><!-- Add 'hide' class when scrolling down -->
 	<div class="row">
 		<div class="container">
 			<div class="logo columns small-6">
 				<img src="media/icons/dc-logo.svg<?php $ver ?>">
 			</div>
-			<div class="navigation show columns small-6">
+			<div class="navigation show columns small-6"><!-- Add 'show' class toggling/when scrolling up -->
 				<div class="nav-tray fill-light">
 					<a class="link button fill-light strong" href="">+ 91 98765 43210</a>
 					<a class="link button fill-light" href="">Services</a>
