@@ -3,6 +3,7 @@
  */
 
 .header-section {
+	pointer-events: all;
 	display: block;
 	position: fixed;
 	z-index: 100;
@@ -11,6 +12,14 @@
 	width: 100%;
 	height: var(--space-one);
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0px 2px 6px rgba(0,0,0,0.05), inset 0 2px 0 rgba(255, 255, 255, 0.2);
+	transform: translate(0);
+	transition: transform .3s ease-out;
+}
+
+/* -- Add this class when scrolling down -- */
+.header-section.hide {
+	pointer-events: none;
+	transform: translateY(-100%);
 }
 
 .header-section .logo {

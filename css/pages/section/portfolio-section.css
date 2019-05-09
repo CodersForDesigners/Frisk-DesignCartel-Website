@@ -21,9 +21,7 @@
 	height: 250px;
 }
 
-.portfolio-section .featured-project .featured-content .featured-name {
-	line-height: var(--space-three-quarter);
-}
+.portfolio-section .featured-project .featured-content .featured-name {}
 
 @media( min-width: 640px )  {
 	.portfolio-section .featured-project .featured-image .image-bg {

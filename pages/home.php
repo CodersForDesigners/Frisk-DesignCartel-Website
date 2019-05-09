@@ -110,10 +110,10 @@
 									That’s why we call ourselves a cartel.
 								</div>
 							</div>
-							<div class="columns small-12 medium-5">
+							<div class="inline-middle columns small-12 medium-5">
 								<div class="h5 featured-name">Bau-House</div>
 							</div>
-							<div class="columns small-12 medium-6 medium-offset-1">
+							<div class="inline-middle columns small-12 medium-6 medium-offset-1">
 								<div class="button fill-off-neutral">View Project</div>
 							</div>
 						</div>
