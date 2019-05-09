@@ -34,6 +34,7 @@
 	<!-- JS Modules -->
 	<script type="text/javascript" src="/js/modules/utils.js"></script>
 	<!-- <script type="text/javascript" src="/js/modules/device-charge.js"></script> -->
+	<script type="text/javascript" src="/js/modules/navigation.js"></script>
 	<script type="text/javascript" src="/js/modules/video_embed.js"></script>
 	<script type="text/javascript" src="/js/modules/tabs.js"></script>
 	<script type="text/javascript" src="/js/modules/modal_box.js"></script>

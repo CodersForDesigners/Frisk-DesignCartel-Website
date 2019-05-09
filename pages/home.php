@@ -33,7 +33,7 @@
 
 
 <!-- Service Section -->
-<section class="service-section">
+<section class="service-section" id="services">
 	<div class="service-intro row space-one-top-bottom">
 		<div class="container">
 			<div class="columns small-12 medium-5 large-4">
@@ -88,7 +88,7 @@
 
 
 <!-- Portfolio Section -->
-<section class="portfolio-section">
+<section class="portfolio-section" id="portfolio">
 	<div class="featured-project">
 		<div class="row featured-image">
 			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php $ver ?>');"></div>
@@ -159,7 +159,7 @@
 
 
 <!-- About Section -->
-<section class="about-section space-double-bottom">
+<section class="about-section space-double-bottom" id="about">
 	<div class="row about-intro">
 		<div class="container">
 			<div class="frame columns small-12 medium-8 fill-off-neutral space-one-top-bottom">
@@ -187,7 +187,7 @@
 
 
 <!-- Process Section -->
-<section class="process-section block space-one-top-bottom fill-off-neutral" style="background-image: url('media/home/process-bg.jpg<?php $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
+<section class="process-section block space-one-top-bottom fill-off-neutral" id="process" style="background-image: url('media/home/process-bg.jpg<?php $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12">
@@ -337,7 +337,7 @@
 
 
 <!-- Contact Section -->
-<section class="contact-section">
+<section class="contact-section" id="contact">
 	<div class="contact-intro row">
 		<div class="container">
 			<div class="frame columns small-12 medium-10 large-5 fill-off-light space-one-top space-half-bottom">
