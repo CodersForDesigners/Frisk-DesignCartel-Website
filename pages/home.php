@@ -24,7 +24,7 @@
 <!-- Splash Video Section -->
 <section class="splash-video-section">
 	<div class="row">
-		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="MUxY21qqEhI" data-loop="true" data-autoplay="true">
+		<div class="video-embed video-embed-bg js_video_embed js_video_get_player" data-src="<!-- MUxY21qqEhI -->" data-loop="true" data-autoplay="true">
 			<div class="video-embed-placeholder" style="background-image: url( 'media/home/splash-video-thumb.jpg' );"></div>
 		</div>
 	</div>
