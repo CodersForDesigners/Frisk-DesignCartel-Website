@@ -11,11 +11,10 @@
  * @since 1.0.0
  */
 
-function stringEndsWith ( $string, $key ) {
-	return strrpos( $string, $key ) !== false;
-}
-
 # A convenient redirect to the login page
 $requestURI = $_SERVER[ 'REQUEST_URI' ];
-if ( stringEndsWith( $requestURI, '/cms/' ) )
-	header( 'Location: ' . $requestURI . 'wp-login.php' );
+$theURLEndsWithCMS = preg_match( '/\/+cms\/+$/', $requestURI );
+if ( $theURLEndsWithCMS ) {
+	$adminPageURL = preg_replace( '/\/+/', '/', $requestURI . '/admin' );
+	header( 'Location: ' . $adminPageURL );
+}

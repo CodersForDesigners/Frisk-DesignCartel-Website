@@ -9,20 +9,21 @@ $links = getContent( $defaultLinks, 'pages' );
 /*
  * Figure out the base URL
  */
-$urlFragments = preg_split( '/\//', $_SERVER[ 'REQUEST_URI' ] );
-	// Pull out the first non-empty fragment
-$calculatedBaseSlug = '';
-$inferredBaseSlug = $_GET[ '_slug' ] ?? '';
-foreach ( $urlFragments as $fragment ) {
-	if ( ! empty( $fragment ) ) {
-		$calculatedBaseSlug = $fragment;
-		break;
-	}
-}
-if ( $inferredBaseSlug == $calculatedBaseSlug )
-	$baseURL = null;
-else
-	$baseURL = '/' . $calculatedBaseSlug . '/';
+// $urlFragments = preg_split( '/\//', $_SERVER[ 'REQUEST_URI' ] );
+// 	// Pull out the first non-empty fragment
+// $calculatedBaseSlug = '';
+// $inferredBaseSlug = $_GET[ '_slug' ] ?? '';
+// foreach ( $urlFragments as $fragment ) {
+// 	if ( ! empty( $fragment ) ) {
+// 		$calculatedBaseSlug = $fragment;
+// 		break;
+// 	}
+// }
+// if ( $inferredBaseSlug == $calculatedBaseSlug )
+// 	$baseURL = null;
+// else
+// 	$baseURL = '/' . $calculatedBaseSlug . '/';
+$baseURL = '/';
 
 /*
  * Get the title and URL of the website and current page

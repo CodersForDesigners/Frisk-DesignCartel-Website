@@ -132,7 +132,7 @@ wp option update home "${siteURL}/cms"
 wp eval 'global $wp_rewrite; $home_path = get_home_path(); $htaccess_file = $home_path . ".htaccess"; $rules = explode( "\n", $wp_rewrite->mod_rewrite_rules() ); insert_with_markers( $htaccess_file, "WordPress", $rules );'
 
 # # Update site settings
-wp option update permalink_structure "/%postname%/"
+wp option update permalink_structure "/%postname%"
 wp option update home "${siteURL}/cms"
 
 # # Link the uploads folder to our media folder
