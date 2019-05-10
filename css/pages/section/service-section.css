@@ -10,16 +10,16 @@
 
 @media( min-width: 640px )  {
 	.service-section .service-intro .image-bg {
-		height: 490px;
+		height: 360px;
 	}
 }
 @media( min-width: 1040px ) {
 	.service-section .service-intro .image-bg {
-		height: 450px;
+		height: 440px;
 	}
 }
 @media( min-width: 1480px ) {
 	.service-section .service-intro .image-bg {
-		height: 660px;
+		height: 620px;
 	}
 }

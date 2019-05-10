@@ -162,7 +162,7 @@
 <section class="about-section space-double-bottom" id="about">
 	<div class="row about-intro">
 		<div class="container">
-			<div class="frame scroll-reveal columns small-12 medium-8 fill-off-neutral space-one-top-bottom">
+			<div class="frame scroll-reveal columns small-12 medium-8 space-one-top-bottom">
 				<div class="h3 space-half-bottom">What do you get when you put two architects and an engineer to work in an office that used to be a music studio in the 80s?</div>
 				<div class="p strong">An architecture and design firm that functions like a well-oiled machine.</div>
 			</div>

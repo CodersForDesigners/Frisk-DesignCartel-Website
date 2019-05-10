@@ -35,20 +35,22 @@
 	.about-section .about-intro {
 		background-color: transparent;
 	}
+
 	.about-section .about-intro .frame {
 		padding-left: var(--space-one);
 		padding-right: var(--space-one);
+		background-color: var(--off-neutral-90);
 	}
 
 	.about-section .about-image {
 		margin: 0;
-		margin-top: -615px;
+		margin-top: -480px;
 	}
 
 	.about-section .about-image .image-bg {
 		margin-left: 50%;
 		width: 50%;
-		height: 650px;
+		height: 540px;
 		background-position: 25% 50%;
 	}
 }
@@ -62,11 +64,11 @@
 	}
 
 	.about-section .about-image .image-bg {
-		height: 1000px;
+		height: 980px;
 	}
 }
 @media( min-width: 1480px ) {
 	.about-section .about-image .image-bg {
-		height: 1260px;
+		height: 1200px;
 	}
 }
