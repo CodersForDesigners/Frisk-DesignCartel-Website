@@ -12,7 +12,7 @@
 		?>
 
 		<!-- Lazaro Signature -->
-		<?php lazaro_signature(); ?>
+		<?php //lazaro_signature(); ?>
 		<!-- END : Lazaro Signature -->
 
 	</div><!-- END : Page Wrapper -->
