@@ -808,3 +808,56 @@ select { cursor: pointer; }
 
 
 
+/*
+ *
+ *	Scroll Reveal
+ *
+ */
+
+
+
+@media( min-width: 640px )  {
+	.scroll-reveal {
+		opacity: 0;
+		transform: translateY(var(--space-one));
+		transition: opacity .3s ease-out, transform .3s ease-out;
+	}
+
+	.scroll-reveal.reveal {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.scroll-reveal.delay-25 {
+		transition-delay: .25s;
+	}
+
+	.scroll-reveal.delay-50 {
+		transition-delay: .5s;
+	}
+
+	.scroll-reveal.delay-75 {
+		transition-delay: .75s;
+	}
+
+	.scroll-reveal.delay-100 {
+		transition-delay: 1s;
+	}
+
+	.scroll-reveal.delay-125 {
+		transition-delay: 1.25s;
+	}
+
+	.scroll-reveal.delay-150 {
+		transition-delay: 1.5s;
+	}
+
+	.scroll-reveal.delay-175 {
+		transition-delay: 1.75s;
+	}
+
+	.scroll-reveal.delay-200 {
+		transition-delay: 2s;
+	}
+}
+
