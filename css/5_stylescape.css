@@ -5,7 +5,7 @@
 
 /* ## Basic Breakpoints
  * ====================
- 
+
 @media( min-width: 640px )  {}
 @media( min-width: 1040px ) {}
 @media( min-width: 1480px ) {}
@@ -94,7 +94,7 @@ body, .body {
 .position-relative { position: relative; }
 
 
-h1, h2, h3, h4, h5, h6, 
+h1, h2, h3, h4, h5, h6,
 p, small, label {
 	margin: 0;
 	display: inline;
@@ -323,7 +323,7 @@ button:focus,
 	.button {
 		padding: 0 calc(var(--space-half)/2);
 		height: var(--space-half);
-		font-size: 1.6rem; 
+		font-size: 1.6rem;
 		line-height: var(--space-half);
 		border-radius: 0;
 	}
@@ -770,7 +770,7 @@ select { cursor: pointer; }
 
 .tabs .tab-item.show .tab-content {
 	padding: var(--space-min);
-	padding-bottom: var(--space-half); 
+	padding-bottom: var(--space-half);
 	max-height: 400px;
 	opacity: 1;
 	transition: max-height .3s ease-out, padding .3s ease-out, opacity .3s .6s ease-out;
@@ -818,11 +818,11 @@ select { cursor: pointer; }
 
 
 @media( min-width: 640px )  {
-	/*.scroll-reveal {
+	.scroll-reveal {
 		opacity: 0;
 		transform: translateY(var(--space-one));
 		transition: opacity .3s ease-out, transform .3s ease-out;
-	}*/
+	}
 
 	.scroll-reveal.reveal {
 		opacity: 1;

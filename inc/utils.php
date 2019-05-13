@@ -47,7 +47,7 @@ function getContent ( $fallback, $field, $context = null ) {
 
 	if ( empty( $context ) )
 		$context = 'options';
-	else {
+	else if ( is_string( $context ) ) {
 		$page = get_page_by_path( $context );
 		if ( empty( $page ) or empty( $page->ID ) )
 			$context = 'options';

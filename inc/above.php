@@ -25,7 +25,7 @@ $ver = '?v=20190509';
 
 	<!--  ★  MARKUP GOES HERE  ★  -->
 
-	<div id="page-wrapper" data-page="<?php echo $viewName ?>"><!-- Page Wrapper -->
+	<div id="page-wrapper"><!-- Page Wrapper -->
 
 		<?php //require_once 'navigation.php'; ?>
 
