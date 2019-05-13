@@ -33,6 +33,28 @@ $( ".js_nav_toggle" ).on( "click", function ( event ) {
 	$navigationMenu.toggleClass( "show" );
 } );
 
+/*
+ *
+ * Smooth-scroll to sections
+ *
+ */
+$( document ).on( "click", "a[ href ^= '/#' ]", function ( event ) {
+	event.preventDefault();
+	event.stopPropagation();
+	event.stopImmediatePropagation();
+	var $link = $( event.target ).closest( "a" );
+	var toSectionId = $link.attr( "href" ).slice( 2 );
+	// setTimeout( function () {
+		var domSection = document.getElementById( toSectionId );
+		window.scrollTo( { top: domSection.offsetTop - 50, behavior: "smooth" } );
+	// }, 0 );
+	// Hide the menu
+	$navigationMenu.removeClass( "show" );
+	return false;
+} );
+
+
+
 // Returns whether or not an element has **not** been "revealed",
 //  	i.e. does not have the `reveal` class
 function hasElementNotBeenRevealed ( $el ) {
