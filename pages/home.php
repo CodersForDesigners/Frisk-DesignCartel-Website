@@ -36,18 +36,18 @@
 <section class="service-section" id="services">
 	<div class="service-intro row space-one-top-bottom">
 		<div class="container">
-			<div class="scroll-reveal columns small-12 medium-5 large-4">
+			<div class="scroll-reveal columns small-12 medium-5 large-4 js_scroll_reveal">
 				<div class="h2 space-min-bottom">Inclusive Methods. Exclusive Design.</div>
 				<div class="h3 text-neutral">A new-school approach to a timeless practice.</div>
 			</div>
-			<div class="scroll-reveal delay-25 columns small-12 medium-offset-1 medium-6 large-7 hide-for-mobile">
+			<div class="scroll-reveal delay-25 columns small-12 medium-offset-1 medium-6 large-7 hide-for-mobile js_scroll_reveal">
 				<div class="image-bg" style="background-image: url('media/home/service.jpg<?php $ver ?>');"></div>
 			</div>
 		</div>
 	</div>
 	<div class="row space-double-bottom">
 		<div class="container">
-			<div class="tabs scroll-reveal delay-100 columns small-12 large-10 large-offset-1 js_tabs_container">
+			<div class="tabs scroll-reveal delay-100 columns small-12 large-10 large-offset-1 js_tabs_container js_scroll_reveal">
 				<div class="row tab-item show js_tab">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">Architecture & Interior design</div>
@@ -162,19 +162,19 @@
 <section class="about-section space-double-bottom" id="about">
 	<div class="row about-intro">
 		<div class="container">
-			<div class="frame scroll-reveal columns small-12 medium-8 space-one-top-bottom">
+			<div class="frame scroll-reveal columns small-12 medium-8 space-one-top-bottom js_scroll_reveal">
 				<div class="h3 space-half-bottom">What do you get when you put two architects and an engineer to work in an office that used to be a music studio in the 80s?</div>
 				<div class="p strong">An architecture and design firm that functions like a well-oiled machine.</div>
 			</div>
 		</div>
 	</div>
 	<div class="row about-image">
-		<div class="block scroll-reveal delay-25 image-bg" style="background-image: url('media/home/about.jpg<?php $ver ?>');"></div>
+		<div class="block scroll-reveal delay-25 image-bg js_scroll_reveal" style="background-image: url('media/home/about.jpg<?php $ver ?>');"></div>
 	</div>
 	<div class="row about-content">
 		<div class="container">
 			<div class="columns small-12 large-4 large-offset-1">
-				<div class="p scroll-reveal delay-100 space-half-top">
+				<div class="p scroll-reveal delay-100 space-half-top js_scroll_reveal">
 					We mix and match our in-house departments, trusted collaborators, contractors, and skilful technicians to create a highly efficient assembly chain. Each section plugs in and out at just the right point in the process.
 					<br><br>
 					What brings the studio heads of Design Cartel together is a shared academic and research-based experience in architecture. However, the origin stories are quite diverse. Within this company are a professional musician, a photographer, a DIY enthusiast, avid travellers, and Scotch enthusiasts. Knowledge and experience from these other creative fields trickle into the smallest design nuances.
@@ -340,7 +340,7 @@
 <section class="contact-section" id="contact">
 	<div class="contact-intro row">
 		<div class="container">
-			<div class="frame scroll-reveal columns small-12 medium-10 large-5 fill-off-light space-one-top space-half-bottom">
+			<div class="frame scroll-reveal columns small-12 medium-10 large-5 fill-off-light space-one-top space-half-bottom js_scroll_reveal">
 				<div class="h3 space-half-bottom">We’re the only cartel in the world that will tell you our location.</div>
 				<div class="p space-min-bottom">
 					198 Link Road, Seshadripuram<br>
@@ -355,7 +355,7 @@
 	<div class="contact-form row">
 		<div class="container">
 			<form class="form">
-				<div class="frame scroll-reveal delay-25 columns small-12 medium-10 medium-offset-2 large-8 large-offset-4 fill-off-dark space-half-top space-one-bottom">
+				<div class="frame scroll-reveal delay-25 columns small-12 medium-10 medium-offset-2 large-8 large-offset-4 fill-off-dark space-half-top space-one-bottom js_scroll_reveal">
 					<div class="title h5 text-uppercase">Get in Touch</div>
 					<div class="row">
 						<div class="form-item columns small-12 medium-6">
