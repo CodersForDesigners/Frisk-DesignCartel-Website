@@ -246,9 +246,9 @@
  */
 
 .form-error {
-	/*background-image: linear-gradient( to top, rgba( 255, 42, 46, 0.5 ), rgba( 255, 42, 46, 0.5 ) 5px, transparent 5px );*/
-	border-right: 5px solid rgba( 255, 42, 46, 0.75 );
-	border-bottom: 5px solid rgba( 255, 42, 46, 0.75 );
+	background-image: linear-gradient( to top, rgba( 255, 42, 46, 0.75 ), rgba( 255, 42, 46, 0.75 ) 5px, transparent 5px );
+	/*border-right: 5px solid rgba( 255, 42, 46, 0.75 );*/
+	/*border-bottom: 5px solid rgba( 255, 42, 46, 0.75 );*/
 }
 
 input[type="submit"].loading,
