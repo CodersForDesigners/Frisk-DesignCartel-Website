@@ -126,6 +126,16 @@
 	background-color: #000;
 	opacity: 0.35;
 }
+/* The following bit is just so the carousel feature will work */
+	/* visually, it does nothing */
+.portfolio-section .other-project .project-list .project-item:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: var(--space-min);
+	height: 100%;
+}
 
 @media( min-width: 640px )  {
 	.portfolio-section .other-project .project-list .project-item {
