@@ -102,6 +102,38 @@ function isOnHTTPS () {
 
 /*
  *
+ * Figure out if the page being requested has a corresponding template or not
+ *
+ */
+function pageIsStatic () {
+	return empty( $_GET[ '_post_type' ] );
+}
+
+
+
+/*
+ *
+ * Get the current post that the url is refering to
+ *
+ */
+function getCurrentPost () {
+	$post = get_posts( [
+		'post_type' => $_GET[ '_post_type' ],
+		'name' => $_GET[ '_slug' ],
+		'post_status' => 'publish',
+		'numberposts' => 1,
+		'posts_per_page' => 1
+	] );
+	if ( ! empty( $post ) )
+		return $post[ 0 ];
+	else
+		return null;
+}
+
+
+
+/*
+ *
  * Get the title of the current page
  *
  */

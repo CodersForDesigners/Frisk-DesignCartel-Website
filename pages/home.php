@@ -350,64 +350,64 @@
 	</div>
 	<div class="contact-form row">
 		<div class="container">
-			<form class="form">
+			<form class="form js_enquiry_form">
 				<div class="frame scroll-reveal delay-25 columns small-12 medium-10 medium-offset-2 large-8 large-offset-4 fill-off-dark space-half-top space-one-bottom js_scroll_reveal">
 					<div class="title h5 text-uppercase">Get in Touch</div>
 					<div class="row">
 						<div class="form-item columns small-12 medium-6">
 							<div class="label">
 								<span class="visuallyhidden">Name (Required)</span>
-								<input type="text" class="block" placeholder="Name*">
+								<input type="text" class="block" placeholder="Name*" name="name">
 							</div>
 						</div>
 						<div class="form-item columns small-12 medium-6">
 							<div class="label">
 								<span class="visuallyhidden">Company</span>
-								<input type="text" class="block" placeholder="Company">
+								<input type="text" class="block" placeholder="Company" name="company">
 							</div>
 						</div>
 						<div class="form-item columns small-12 medium-6">
 							<div class="label">
 								<span class="visuallyhidden">Location (Required)</span>
-								<input type="text" class="block" placeholder="Location*">
+								<input type="text" class="block" placeholder="Location*" name="location">
 							</div>
 						</div>
 						<div class="form-item columns small-12 medium-6">
 							<div class="label">
 								<span class="visuallyhidden">Contact Number (Required)</span>
-								<input type="text" class="block" placeholder="Contact Number*">
+								<input type="text" class="block" placeholder="Contact Number*" name="phoneNumber">
 							</div>
 						</div>
 						<div class="form-item columns small-12 medium-6">
 							<div class="label">
 								<span class="visuallyhidden">Email (Required)</span>
-								<input type="text" class="block" placeholder="Email*">
+								<input type="email" class="block" placeholder="Email*" name="email">
 							</div>
 						</div>
 						<div class="form-item columns small-12 medium-6">
 							<div class="label">
 								<span class="visuallyhidden">Type of Inquiry (Required)</span>
-								<select class="block">
-									<option disabled="" selected="">Type of Inquiry*</option>
-									<option>Residential</option>
-									<option>Commercial</option>
+								<select class="block" name="inquiryType">
+									<option disabled="" selected="" value="">Type of Inquiry*</option>
+									<option value="Residential">Residential</option>
+									<option value="Commercial">Commercial</option>
 								</select>
 							</div>
 						</div>
 						<div class="form-item columns small-12">
 							<div class="label">
 								<span class="visuallyhidden">How can we help you?</span>
-								<textarea class="block" placeholder="How can we help you?"></textarea>
+								<textarea class="block" placeholder="How can we help you?" name="message"></textarea>
 							</div>
 						</div>
 						<div class="form-item columns small-6 medium-3">
-							<div class="label">
+							<div  class="label">
 								<span class="visuallyhidden">Send</span>
-								<button class="button block fill-off-neutral">Send</button>
+								<button type="submit" class="button block fill-off-neutral">Send</button>
 							</div>
 						</div>
 						<div class="form-item columns small-12 medium-9">
-							<div class="feedback p">Thank you! We’ll get back to you shortly.</div>
+							<div class="feedback p js_feedback_message"></div>
 						</div>
 					</div>
 				</div>
