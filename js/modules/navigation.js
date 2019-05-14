@@ -73,7 +73,7 @@ function layoutNavigation () {
 		if (
 			$elementsToReveal[ _i ].offset().top
 				<
-			currentScrollTop + viewportHeight / 1.5
+			currentScrollTop + ( 0.95 * viewportHeight )
 		)
 			$elementsToReveal[ _i ].addClass( "reveal" );
 	}
