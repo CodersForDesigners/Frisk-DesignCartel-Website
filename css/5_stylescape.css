@@ -394,7 +394,13 @@ select:focus {
 	box-shadow: 0px 2px 6px rgba(20,20,10,0.5);
 }
 
-select { cursor: pointer; }
+select {
+	cursor: pointer;
+	background-image: url('../media/icons/icon-down.svg');
+	background-size: 32px 32px;
+	background-position: center right 5px;
+	background-repeat: no-repeat;
+}
 
 .input-large.input-large {
 	height: calc( var(--space-three-quarter)*1.5 - 10 );

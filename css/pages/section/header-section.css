@@ -45,12 +45,14 @@
 	padding: var(--space-min);
 	padding-bottom: 0;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0px 2px 6px rgba(0,0,0,0.05), inset 0 2px 0 rgba(255, 255, 255, 0.2);
-	transition: transform .3s ease-out;
+	transition: transform .3s ease-out, opacity .3s ease-out;
+	opacity: 0;
 	transform: translateY(-200%);
 }
 
 .header-section .navigation.show .nav-tray {
 	pointer-events: all;
+	opacity: 1;
 	transform: translateY(0);
 }
 
