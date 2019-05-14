@@ -22,7 +22,8 @@ $links = getContent( $defaultLinks, 'pages' );
 /*
  * Figure out the base URL
  */
-// $urlFragments = preg_split( '/\//', $_SERVER[ 'REQUEST_URI' ] );
+$urlPath = strstr( $_SERVER[ 'REQUEST_URI' ], '?', true );
+// $urlFragments = preg_split( '/\//', $urlPath );
 // 	// Pull out the first non-empty fragment
 // $calculatedBaseSlug = '';
 // $inferredBaseSlug = $_GET[ '_slug' ] ?? '';
@@ -42,7 +43,7 @@ $baseURL = '/';
  * Get the title and URL of the website and current page
  */
 $siteTitle = getContent( 'Design Cartel', 'site_title' );
-$pageUrl = $siteUrl . $_SERVER[ 'REQUEST_URI' ];
+$pageUrl = $siteUrl . $urlPath;
 if ( pageIsStatic() )
 	$pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 else {
@@ -53,6 +54,7 @@ else {
 	}
 	$pageTitle = $the_post->post_title . ' | ' . $siteTitle;
 }
+http_response_code( 200 );
 
 ?>
 
