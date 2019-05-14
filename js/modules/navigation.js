@@ -39,18 +39,27 @@ $( ".js_nav_toggle" ).on( "click", function ( event ) {
  *
  */
 $( document ).on( "click", "a[ href ^= '/#' ]", function ( event ) {
+
+	var $link = $( event.target ).closest( "a" );
+	// Extract the id of the section
+	var toSectionId = $link.attr( "href" ).slice( 2 );
+	// Get a reference to the DOM node representing the section
+	var domSection = document.getElementById( toSectionId );
+	// If the section don't exist, we don't want to prevent the default behavior
+	if ( ! domSection )
+		return;
+	// It does exist, so now we do prevent the default behavior
 	event.preventDefault();
 	event.stopPropagation();
 	event.stopImmediatePropagation();
-	var $link = $( event.target ).closest( "a" );
-	var toSectionId = $link.attr( "href" ).slice( 2 );
-	// setTimeout( function () {
-		var domSection = document.getElementById( toSectionId );
-		window.scrollTo( { top: domSection.offsetTop - 50, behavior: "smooth" } );
-	// }, 0 );
+	// Scroll to the section
+	window.scrollTo( { top: domSection.offsetTop - 50, behavior: "smooth" } );
 	// Hide the menu
 	$navigationMenu.removeClass( "show" );
+
+	// Just a fallback to ensure that the default behavior is prevented
 	return false;
+
 } );
 
 
