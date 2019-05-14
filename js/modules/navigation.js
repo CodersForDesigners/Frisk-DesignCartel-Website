@@ -89,7 +89,8 @@ function layoutNavigation () {
 
 	// If scrolling ↓.....
 	if ( currentScrollTop > previousScrollTop ) {
-		$navigationSection.addClass( "hide" );
+		if ( currentScrollTop > viewportHeight / 2 )
+			$navigationSection.addClass( "hide" );
 	}
 	else {	// if scrolling ↑.....
 		$navigationMenu.removeClass( "show" );
