@@ -101,6 +101,7 @@ function layoutNavigation () {
 
 }
 
+layoutNavigation();
 $( window ).on( "scroll", layoutNavigation );
 
 
