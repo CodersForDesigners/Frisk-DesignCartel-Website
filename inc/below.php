@@ -11,9 +11,10 @@
 			require_once __DIR__ . '/dc-footer.php';
 		?>
 
-		<!-- Lazaro Signature -->
-		<?php //lazaro_signature(); ?>
-		<!-- END : Lazaro Signature -->
+		<?php
+		/* -- Signature -- */
+			require_once __DIR__ . '/signature.php';
+		?>
 
 	</div><!-- END : Page Wrapper -->
 

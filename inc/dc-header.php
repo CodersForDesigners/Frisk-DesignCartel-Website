@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="container">
 			<a class="logo columns small-6" href="<?= $baseURL ?>">
-				<img src="media/icons/dc-logo.svg<?php $ver ?>">
+				<img src="media/icons/dc-logo.svg<?php echo $ver ?>">
 			</a>
 			<div class="navigation columns small-6 js_navigation_menu"><!-- Add 'show' class toggling/when scrolling up -->
 				<div class="nav-tray fill-light">

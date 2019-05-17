@@ -13,7 +13,7 @@
 				<div class="label text-center">Architecture | Interior Design | Project Management <span class="hide-for-tablet">|</span> Bangalore, India</div>
 			</div>
 			<div class="logo columns small-12 medium-3 inline-middle">
-				<img src="media/icons/dc-logo.svg<?php $ver ?>">
+				<img src="media/icons/dc-logo.svg<?php echo $ver ?>">
 			</div>
 		</div>
 	</div>

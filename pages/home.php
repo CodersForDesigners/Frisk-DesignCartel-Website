@@ -41,7 +41,7 @@
 				<div class="h3 text-neutral">A new-school approach to a timeless practice.</div>
 			</div>
 			<div class="scroll-reveal delay-25 columns small-12 medium-offset-1 medium-6 large-7 hide-for-mobile js_scroll_reveal">
-				<div class="image-bg" style="background-image: url('media/home/service.jpg<?php $ver ?>');"></div>
+				<div class="image-bg" style="background-image: url('media/home/service.jpg<?php echo $ver ?>');"></div>
 			</div>
 		</div>
 	</div>
@@ -91,7 +91,7 @@
 <section class="portfolio-section" id="portfolio">
 	<div class="featured-project">
 		<div class="row featured-image">
-			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php $ver ?>');"></div>
+			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php echo $ver ?>');"></div>
 		</div>
 		<div class="row featured-content space-one-top-bottom fill-off-light">
 			<div class="container">
@@ -132,19 +132,19 @@
 		</div>
 		<div class="row carousel space-half-bottom js_carousel_container">
 			<div class="project-list carousel-list text-light js_carousel_content">
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-2-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Floating Table Office</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-3-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Grey Office</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-4-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Red Office</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-5-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Rustic House</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-6-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The White Office</div>
 				</div>
 			</div>
@@ -169,7 +169,7 @@
 		</div>
 	</div>
 	<div class="row about-image">
-		<div class="block scroll-reveal delay-25 image-bg js_scroll_reveal" style="background-image: url('media/home/about.jpg<?php $ver ?>');"></div>
+		<div class="block scroll-reveal delay-25 image-bg js_scroll_reveal" style="background-image: url('media/home/about.jpg<?php echo $ver ?>');"></div>
 	</div>
 	<div class="row about-content">
 		<div class="container">
@@ -187,7 +187,7 @@
 
 
 <!-- Process Section -->
-<section class="process-section block space-one-top-bottom fill-off-neutral" id="process" style="background-image: url('media/home/process-bg.jpg<?php $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
+<section class="process-section block space-one-top-bottom fill-off-neutral" id="process" style="background-image: url('media/home/process-bg.jpg<?php echo $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12">
@@ -277,13 +277,13 @@
 	<div class="row carousel space-half-bottom js_carousel_container">
 		<div class="testimonial-list carousel-list text-light js_carousel_content">
 			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('media/testimonial/lazaro-logo.svg'<?php $ver ?>)"></div>
+				<div class="icon" style="background-image: url('media/testimonial/lazaro-logo.svg'<?php echo $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">DC built our office keeping our core values in mind. They came up with the solution of having desks with no legs to maximise space within the office and ensure we don’t stub our toes! These floating desks have now become a highlight and have helped us better organise the office along with our thoughts. We recommend DC for their keen eye, transparent processes and collaborative spirit.</div>
 				<div class="name p strong space-min-bottom">Mark Lazaro</div>
 				<div class="company p">Lazaro Advertising Pvt. Ltd.</div>
 			</div>
 			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -293,7 +293,7 @@
 				<div class="company p">XYZ Company</div>
 			</div>
 			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -303,7 +303,7 @@
 				<div class="company p">XYZ Company</div>
 			</div>
 			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -313,7 +313,7 @@
 				<div class="company p">XYZ Company</div>
 			</div>
 			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php $ver ?>)"></div>
+				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
 				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

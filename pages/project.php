@@ -52,7 +52,7 @@
 	<!-- Project Cover -->
 	<div class="project-cover">
 		<div class="row cover-image">
-			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php $ver ?>');"></div>
+			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php echo $ver ?>');"></div>
 		</div>
 		<div class="row project-content space-one-top-bottom fill-off-light">
 			<div class="container">
@@ -235,19 +235,19 @@
 		</div>
 		<div class="row carousel space-half-bottom js_carousel_container">
 			<div class="project-list carousel-list text-light js_carousel_content">
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-2-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-2-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Floating Table Office</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-3-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-3-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Grey Office</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-4-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-4-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Red Office</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-5-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-5-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The Rustic House</div>
 				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-6-cover.jpg<?php $ver ?>');">
+				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-6-cover.jpg<?php echo $ver ?>');">
 					<div class="title h5 space-half">The White Office</div>
 				</div>
 			</div>
