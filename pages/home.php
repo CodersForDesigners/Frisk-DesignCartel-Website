@@ -5,11 +5,27 @@
  *
  */
 
-// Page-specific preparatory code goes here.
+require_once __DIR__ . '/../inc/above.php';
+
+$projects = get_posts( [
+	'post_type' => 'projects',
+	'post_status' => 'publish',
+	'numberposts' => -1,
+	// 'order' => 'ASC'
+	'orderby' => 'date'
+] );
+
+$featuredProject = null;
+foreach ( $projects as $project ) {
+	if ( has_tag( 'featured', $project->ID ) ) {
+		$featuredProject = $project;
+		break;
+	}
+}
+if ( ! $featuredProject )
+	$featuredProject = $projects[ 0 ];
 
 ?>
-
-<?php require_once __DIR__ . '/../inc/above.php'; ?>
 
 
 
@@ -91,7 +107,7 @@
 <section class="portfolio-section" id="portfolio">
 	<div class="featured-project">
 		<div class="row featured-image">
-			<div class="block image-bg" style="background-image: url('media/home/project-1-cover.jpg<?php echo $ver ?>');"></div>
+			<div class="block image-bg" style="background-image: url( '<?php echo getContent( '', 'featured_image', $featuredProject->ID )[ 'url' ] . $ver ?>' );"></div>
 		</div>
 		<div class="row featured-content space-one-top-bottom fill-off-light">
 			<div class="container">
@@ -111,10 +127,10 @@
 								</div>
 							</div>
 							<div class="inline-middle columns small-12 medium-5">
-								<div class="h5 featured-name">Bau-House</div>
+								<a class="h5 featured-name" href="projects/<?php echo $project->post_name ?>"><?php echo $featuredProject->post_title ?></a>
 							</div>
 							<div class="inline-middle columns small-12 medium-6 medium-offset-1">
-								<div class="button fill-off-neutral">View Project</div>
+								<a class="button fill-off-neutral" href="projects/<?php echo $project->post_name ?>">View Project</a>
 							</div>
 						</div>
 					</div>
@@ -132,21 +148,15 @@
 		</div>
 		<div class="row carousel space-half-bottom js_carousel_container">
 			<div class="project-list carousel-list text-light js_carousel_content">
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-2-cover.jpg<?php echo $ver ?>');">
-					<div class="title h5 space-half">The Floating Table Office</div>
-				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-3-cover.jpg<?php echo $ver ?>');">
-					<div class="title h5 space-half">The Grey Office</div>
-				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-4-cover.jpg<?php echo $ver ?>');">
-					<div class="title h5 space-half">The Red Office</div>
-				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-5-cover.jpg<?php echo $ver ?>');">
-					<div class="title h5 space-half">The Rustic House</div>
-				</div>
-				<div class="project-item carousel-list-item image-bg inline-top js_carousel_item" style="background-image: url('media/home/project-6-cover.jpg<?php echo $ver ?>');">
-					<div class="title h5 space-half">The White Office</div>
-				</div>
+				<?php foreach ( $projects as $project ) : ?>
+					<a
+						class="project-item carousel-list-item image-bg inline-top js_carousel_item"
+						href="projects/<?php echo $project->post_name ?>"
+						style="background-image: url( '<?php echo getContent( '', 'featured_image', $project->ID )[ 'url' ] . $ver ?>' );"
+					>
+						<div class="title h5 space-half"><?php echo $project->post_title ?></div>
+					</a>
+				<?php endforeach; ?>
 			</div>
 			<div class="carousel-controls">
 				<div class="button prev fill-light js_pager" data-dir="left">Previous</div>
