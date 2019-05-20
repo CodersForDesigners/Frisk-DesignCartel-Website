@@ -30,14 +30,23 @@
 	padding: calc(var(--space-min) / 2) 0;
 }
 
-.project-section .project-gallery img {
-	display: inline-block;
-	margin: calc(var(--space-min) / 2);
+.project-section .project-gallery .row .container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.project-section .project-gallery .img-container {
+	padding: calc(var(--space-min) / 2);
+	width: 100%;
 }
 
 @media( min-width: 640px )  {
 	.project-section .project-cover .cover-image .image-bg {
 		height: 400px;
+	}
+	.project-section .project-gallery .img-container {
+		width: 50%;
 	}
 }
 @media( min-width: 1040px ) {
