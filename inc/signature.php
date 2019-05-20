@@ -30,10 +30,10 @@
 	<div class="row">
 		<div class="container">
 			<div class="logo columns small-12 medium-4 inline-middle">
-				<a class="inline-middle" target="_blank" href="http://codersfordesigners.com"><img src="media/icons/c4d-logo.svg<?php echo $ver ?>"></a> &bull; <a class="inline-middle"  target="_blank" href="http://friskfrisk.com"><img src="media/icons/frisk-logo.svg<?php echo $ver ?>"></a>
+				<a class="inline-middle" target="_blank" href="https://codersfordesigners.com"><img src="media/icons/c4d-logo.svg<?php echo $ver ?>"></a> &bull; <a class="inline-middle"  target="_blank" href="https://friskfrisk.com"><img src="media/icons/frisk-logo.svg<?php echo $ver ?>"></a>
 			</div>
 			<div class="link label columns small-12 medium-8 inline-middle">
-				designed by <a target="_blank" href="http://friskfrisk.com">FRISK</a> &bull; built by <a target="_blank" href="http://codersfordesigners.com">CodersForDesigners</a>
+				designed by <a target="_blank" href="https://friskfrisk.com">FRISK</a> &bull; built by <a target="_blank" href="https://codersfordesigners.com">CodersForDesigners</a>
 			</div>
 		</div>
 	</div>
