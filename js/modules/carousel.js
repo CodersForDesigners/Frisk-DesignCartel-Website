@@ -20,9 +20,12 @@ $( document ).on( "click", ".js_carousel_container .js_pager", function ( event 
 	 * 2. Figure out the "current" carousel item, i.e. the one that's in the center
 	 */
 	var { top, left, width, height } = domCarouselContent.getBoundingClientRect();
+	// We get the bottom padding of the carousel because we want it to be
+	//  	carousable even when the carousel is just about off the screen.
+	var carouselPaddingBottom = parseInt( getComputedStyle( domCarouselContent ).paddingBottom, 10 );
 	var contentXMidpoint = left + width / 2;
-	var contentYMidpoint = top + height / 2;
-	var domCurrentItem = document.elementFromPoint( contentXMidpoint, contentYMidpoint );
+	var contentYPoint = top + ( height - carouselPaddingBottom - 1 );
+	var domCurrentItem = document.elementFromPoint( contentXMidpoint, contentYPoint );
 	var $currentItem = $( domCurrentItem ).closest( ".js_carousel_item" );
 
 	/*
