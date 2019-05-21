@@ -25,6 +25,15 @@ foreach ( $projects as $project ) {
 if ( ! $featuredProject )
 	$featuredProject = $projects[ 0 ];
 
+// Testimonials
+$testimonials = get_posts( [
+	'post_type' => 'testimonials',
+	'post_status' => 'publish',
+	'numberposts' => -1,
+	// 'order' => 'ASC'
+	'orderby' => 'date'
+] );
+
 ?>
 
 
@@ -286,52 +295,14 @@ if ( ! $featuredProject )
 	</div>
 	<div class="row carousel space-half-bottom js_carousel_container">
 		<div class="testimonial-list carousel-list text-light js_carousel_content">
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('media/testimonial/lazaro-logo.svg'<?php echo $ver ?>)"></div>
-				<div class="content p space-half-top-bottom">DC built our office keeping our core values in mind. They came up with the solution of having desks with no legs to maximise space within the office and ensure we don’t stub our toes! These floating desks have now become a highlight and have helped us better organise the office along with our thoughts. We recommend DC for their keen eye, transparent processes and collaborative spirit.</div>
-				<div class="name p strong space-min-bottom">Mark Lazaro</div>
-				<div class="company p">Lazaro Advertising Pvt. Ltd.</div>
-			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
-				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</div>
-				<div class="name p strong space-min-bottom">Firstname Lastname</div>
-				<div class="company p">XYZ Company</div>
-			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
-				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</div>
-				<div class="name p strong space-min-bottom">Firstname Lastname</div>
-				<div class="company p">XYZ Company</div>
-			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
-				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</div>
-				<div class="name p strong space-min-bottom">Firstname Lastname</div>
-				<div class="company p">XYZ Company</div>
-			</div>
-			<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
-				<div class="icon" style="background-image: url('https://via.placeholder.com/64'<?php echo $ver ?>)"></div>
-				<div class="content p space-half-top-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</div>
-				<div class="name p strong space-min-bottom">Firstname Lastname</div>
-				<div class="company p">XYZ Company</div>
-			</div>
+			<?php foreach ( $testimonials as $testimonial ) : ?>
+				<div class="testimonial-item carousel-list-item image-bg inline-top fill-off-light space-half js_carousel_item">
+					<div class="icon" style="background-image: url( '<?php echo getContent( '', 'image', $testimonial->ID ) . $ver ?>' )"></div>
+					<div class="content p space-half-top-bottom"><?php echo $testimonial->message ?></div>
+					<div class="name p strong space-min-bottom"><?php echo $testimonial->person ?></div>
+					<div class="company p"><?php echo $testimonial->client ?></div>
+				</div>
+			<?php endforeach; ?>
 		</div>
 		<div class="carousel-controls">
 			<div class="button prev fill-light js_pager" data-dir="left">Previous</div>
