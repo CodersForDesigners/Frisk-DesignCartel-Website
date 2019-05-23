@@ -55,6 +55,13 @@
 	<!-- Other Modules -->
 	<?php // require __DIR__ . '/inc/can-user-hover.php' ?>
 
+	<?php
+		/*
+		 * Arbitrary Code ( Bottom of Body )
+		 */
+		echo getContent( '', 'arbitrary_code_body_bottom' );
+	?>
+
 </body>
 
 </html>

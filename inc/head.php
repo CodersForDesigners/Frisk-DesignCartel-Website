@@ -116,7 +116,7 @@
 
 	<!--
 	*
-	*	Arbitrary Code
+	*	Fonts and Icons
 	*
 	- -->
 	<?php echo getContent( <<<ARB
@@ -125,7 +125,15 @@
 	<!-- Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ARB
-, 'arbitrary_code' ) ?>
+, 'fonts_and_icons' ) ?>
+
+
+	<?php
+		/*
+		 * Arbitrary Code ( Bottom of Head )
+		 */
+		echo getContent( '', 'arbitrary_code_head_bottom' );
+	?>
 
 
 	<!--
