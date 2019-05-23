@@ -242,10 +242,14 @@ $oldGallery = getContent( '', 'gallery', $thisProject->ID );
 /* -- Design Cartel Footer -- */
 	require_once __DIR__ . '/../inc/dc-footer.php';
 ?>
+<?php
+/* -- Signature -- */
+	require_once __DIR__ . '/../inc/signature.php';
+?>
 
 
 <!-- Lazaro Signature -->
-<?php lazaro_signature(); ?>
+<?php //lazaro_signature(); ?>
 <!-- END : Lazaro Signature -->
 
 </div><!-- END : Page Wrapper -->
