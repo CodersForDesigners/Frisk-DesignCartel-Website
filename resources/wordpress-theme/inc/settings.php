@@ -21,7 +21,7 @@ acf_add_options_page( [
 acf_add_options_page( [
 	'page_title' => 'Advanced Settings',
 	'menu_title' => 'Advanced Settings',
-	'menu_slug' => 'metadata',
+	'menu_slug' => 'advanced_settings',
 	'capability' => 'edit_posts',
 	'parent_slug' => '',
 	'position' => false,
