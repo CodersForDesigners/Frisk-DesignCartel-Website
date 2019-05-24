@@ -6,7 +6,7 @@
 
 	<!-- Do NOT place anything above this -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
 	<title><?php echo $pageTitle ?></title>
 
@@ -33,7 +33,7 @@
 	*
 	- -->
 	<!-- Links to information about the author(s) of the document -->
-	<meta name="author" content="Lazaro Advertising">
+	<meta name="author" content="Coders For Designers">
 	<link rel="author" href="humans.txt">
 
 
@@ -82,7 +82,7 @@
 	<!-- Launch Screen Image -->
 	<!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
 	<!-- Launch Icon Title -->
-	<meta name="apple-mobile-web-app-title" content="<?php echo getContent( 'Brown.ie', 'apple -> ios_app_title' ); ?>">
+	<meta name="apple-mobile-web-app-title" content="<?php echo getContent( 'Design Cartel', 'apple -> ios_app_title' ); ?>">
 	<!-- Enable standalone (full-screen) mode -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
@@ -116,6 +116,20 @@
 
 	<!--
 	*
+	*	Enqueue Files
+	*
+	- -->
+	<!-- Stylesheet -->
+	<?php require __DIR__ . '/../style.php'; ?>
+	<!-- jQuery 3 -->
+	<script type="text/javascript" src="plugins/jquery/jquery-3.0.0.min.js<?php echo $ver ?>"></script>
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css<?php echo $ver ?>"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css<?php echo $ver ?>"/>
+
+
+	<!--
+	*
 	*	Fonts and Icons
 	*
 	- -->
@@ -135,18 +149,5 @@ ARB
 		echo getContent( '', 'arbitrary_code_head_bottom' );
 	?>
 
-
-	<!--
-	*
-	*	Enqueue Files
-	*
-	- -->
-	<!-- Stylesheet -->
-	<?php require __DIR__ . '/../style.php'; ?>
-	<!-- jQuery 3 -->
-	<script type="text/javascript" src="plugins/jquery/jquery-3.0.0.min.js<?php echo $ver ?>"></script>
-	<!-- Slick Carousel -->
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css<?php echo $ver ?>"/>
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css<?php echo $ver ?>"/>
 
 </head>
