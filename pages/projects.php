@@ -36,6 +36,7 @@ $projectClient = getContent( '', 'specifics -> client', $thisProject->ID );
 $projectArea = getContent( '', 'specifics -> area', $thisProject->ID );
 $projectType = getContent( '', 'specifics -> type', $thisProject->ID );
 $projectLocation = getContent( '', 'specifics -> location', $thisProject->ID );
+$projectPartners = getContent( '', 'specifics -> collaborators', $thisProject->ID );
 $gallery = array_map( function ( $image ) {
 	return $image[ 'url' ];
 }, getContent( '', 'gallery', $thisProject->ID ) );
@@ -114,6 +115,16 @@ $oldGallery = getContent( '', 'gallery', $thisProject->ID );
 								</div>
 								<div class="columns small-8 medium-9">
 									<div class="p"><?php echo $projectLocation ?></div>
+								</div>
+							</div>
+							<?php endif; ?>
+							<?php if ( ! empty( $projectPartners ) ) : ?>
+							<div class="row">
+								<div class="columns small-4 medium-3">
+									<div class="p strong text-neutral text-uppercase">Partners:</div>
+								</div>
+								<div class="columns small-8 medium-9">
+									<div class="p"><?php echo $projectPartners ?></div>
 								</div>
 							</div>
 							<?php endif; ?>
