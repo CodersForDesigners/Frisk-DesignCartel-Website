@@ -136,10 +136,10 @@ $testimonials = get_posts( [
 								</div>
 							</div>
 							<div class="inline-middle columns small-12 medium-5">
-								<a class="h5 featured-name" href="projects/<?php echo $project->post_name ?>"><?php echo $featuredProject->post_title ?></a>
+								<a class="h5 featured-name" href="projects/<?php echo $featuredProject->post_name ?>"><?php echo $featuredProject->post_title ?></a>
 							</div>
 							<div class="inline-middle columns small-12 medium-6 medium-offset-1">
-								<a class="button fill-off-neutral" href="projects/<?php echo $project->post_name ?>">View Project</a>
+								<a class="button fill-off-neutral" href="projects/<?php echo $featuredProject->post_name ?>">View Project</a>
 							</div>
 						</div>
 					</div>
