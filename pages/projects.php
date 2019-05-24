@@ -93,7 +93,7 @@ $oldGallery = getContent( '', 'gallery', $thisProject->ID );
 									<div class="p strong text-neutral text-uppercase">Area:</div>
 								</div>
 								<div class="columns small-8 medium-9">
-									<div class="p">2500 square feet</div>
+									<div class="p"><?php echo $projectArea ?></div>
 								</div>
 							</div>
 							<?php endif; ?>
@@ -103,7 +103,7 @@ $oldGallery = getContent( '', 'gallery', $thisProject->ID );
 									<div class="p strong text-neutral text-uppercase">Type:</div>
 								</div>
 								<div class="columns small-8 medium-9">
-									<div class="p">Office Interiors</div>
+									<div class="p"><?php echo $projectType ?></div>
 								</div>
 							</div>
 							<?php endif; ?>
@@ -113,7 +113,7 @@ $oldGallery = getContent( '', 'gallery', $thisProject->ID );
 									<div class="p strong text-neutral text-uppercase">Location:</div>
 								</div>
 								<div class="columns small-8 medium-9">
-									<div class="p">Bangalore</div>
+									<div class="p"><?php echo $projectLocation ?></div>
 								</div>
 							</div>
 							<?php endif; ?>
