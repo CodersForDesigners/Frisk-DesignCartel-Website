@@ -22,12 +22,15 @@ $projects = get_posts( [
 ] );
 
 $thisProject = [ ];
-foreach ( $projects as $project ) {
+$thisProjectIndex = null;
+foreach ( $projects as $index => $project ) {
 	if ( $project->post_name == $projectSlug ) {
+		$thisProjectIndex = $index;
 		$thisProject = $project;
 		break;
 	}
 }
+array_splice( $projects, $thisProjectIndex, 1 );
 
 $projectName = $thisProject->post_title;
 $projectFeaturedImage = getContent( '', 'featured_image', $thisProject->ID )[ 'url' ];
