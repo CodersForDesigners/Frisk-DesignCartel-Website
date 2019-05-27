@@ -26,6 +26,14 @@ $( document ).on( "click", ".js_carousel_container .js_pager", function ( event 
 	var contentXMidpoint = left + width / 2;
 	var contentYPoint = top + ( height - carouselPaddingBottom - 1 );
 	var domCurrentItem = document.elementFromPoint( contentXMidpoint, contentYPoint );
+	// This loop is for when the carousel items are of uneven heights
+		// and sometimes the parent element gets selected
+	for ( var _i = 1; _i <= 5; _i += 1 ) {
+		if ( ! $( domCurrentItem ).hasClass( "js_carousel_content" ) )
+			break;
+		contentYPoint = ( 4 / 5 ) * contentYPoint;
+		domCurrentItem = document.elementFromPoint( contentXMidpoint, contentYPoint );
+	}
 	var $currentItem = $( domCurrentItem ).closest( ".js_carousel_item" );
 
 	/*
