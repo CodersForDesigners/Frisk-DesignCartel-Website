@@ -151,7 +151,7 @@ EOT;
  *
  */
 try {
-	$status = Mailer\send( 'adi@lazaro.in', $subject, $message );
+	$status = Mailer\send( 'kaushik@designcartel.in', $subject, $message, [ 'ck@designcartel.in' ] );
 	$response[ 'statusCode' ] = 0;
 	$response[ 'message' ] = 'Enquiry made.';
 }
