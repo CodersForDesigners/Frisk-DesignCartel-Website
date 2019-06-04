@@ -16,14 +16,20 @@ $projects = get_posts( [
 ] );
 
 $featuredProject = null;
-foreach ( $projects as $project ) {
+$featuredProjectIndex = null;
+foreach ( $projects as $index => $project ) {
 	if ( has_tag( 'featured', $project->ID ) ) {
 		$featuredProject = $project;
+		$featuredProjectIndex = $index;
 		break;
 	}
 }
-if ( ! $featuredProject )
+if ( ! $featuredProject ) {
 	$featuredProject = $projects[ 0 ];
+	$projects = array_slice( $projects, 1 );
+}
+else
+	array_splice( $projects, $featuredProjectIndex, 1 );
 
 // Testimonials
 $testimonials = get_posts( [
