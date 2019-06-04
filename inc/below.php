@@ -38,7 +38,7 @@
 	<script type="text/javascript" src="/js/modules/navigation.js"></script>
 	<script type="text/javascript" src="/js/modules/video_embed.js"></script>
 	<script type="text/javascript" src="/js/modules/carousel.js"></script>
-	<script type="text/javascript" src="/js/modules/tabs.js"></script>
+	<script type="text/javascript" src="/js/modules/accordions.js"></script>
 	<script type="text/javascript" src="/js/modules/modal_box.js"></script>
 	<script type="text/javascript" src="/js/modules/smoothscroll.js"></script>
 	<script type="text/javascript" src="/js/modules/form.js"></script>

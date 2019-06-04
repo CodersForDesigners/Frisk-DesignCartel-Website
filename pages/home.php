@@ -70,10 +70,10 @@ $testimonials = get_posts( [
 			</div>
 		</div>
 	</div>
-	<div class="row space-double-bottom">
+	<div class="row space-double-bottom js_accordion_region">
 		<div class="container">
-			<div class="tabs scroll-reveal delay-100 columns small-12 large-10 large-offset-1 js_tabs_container js_scroll_reveal">
-				<div class="row tab-item show js_tab">
+			<div class="tabs scroll-reveal delay-100 columns small-12 large-10 large-offset-1 js_accordion_container js_scroll_reveal js_accordion_container">
+				<div class="row tab-item show js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">Architecture & Interior design</div>
 					</div>
@@ -81,7 +81,7 @@ $testimonials = get_posts( [
 						<div class="tab-content p">Our Architecture and Interior Design studio, in business since 2015, is our bread and butter. Led by Kaushik Kumar, we have designed and executed dozens of projects, bringing our own flavour to each one.</div>
 					</div>
 				</div>
-				<div class="row tab-item js_tab">
+				<div class="row tab-item js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">In-depth Research & Design</div>
 					</div>
@@ -89,7 +89,7 @@ $testimonials = get_posts( [
 						<div class="tab-content p">Exploring the intersections between art and architecture, our Deep Design studio applies design thinking to domains in and beyond architecture. This allows us to work within the latest industry practices. Chandrakanth GM takes charge of this studio.</div>
 					</div>
 				</div>
-				<div class="row tab-item js_tab">
+				<div class="row tab-item js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">Project Management</div>
 					</div>
@@ -97,7 +97,7 @@ $testimonials = get_posts( [
 						<div class="tab-content p">While we apply our time-tested and watertight project management capabilities to every project, Joshy Thomas and his project management department offer these services as a standalone to other architects or builders as well.</div>
 					</div>
 				</div>
-				<div class="row tab-item js_tab">
+				<div class="row tab-item js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-neutral button block text-left">3D & VR Studio</div>
 					</div>
@@ -206,14 +206,14 @@ $testimonials = get_posts( [
 
 
 <!-- Process Section -->
-<section class="process-section block space-one-top-bottom fill-off-neutral" id="process" style="background-image: url('media/home/process-bg.jpg<?php echo $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
+<section class="process-section block space-one-top-bottom fill-off-neutral js_accordion_region" id="process" style="background-image: url('media/home/process-bg.jpg<?php echo $ver ?>'); background-position: center center; background-size: cover; background-blend-mode: multiply;">
 	<div class="row">
 		<div class="container">
 			<div class="columns small-12">
 				<div class="h3 space-half-bottom">Here’s a look at how our projects take shape:</div>
 			</div>
-			<div class="tabs columns small-12 large-10 large-offset-1 js_tabs_container">
-				<div class="row tab-item show js_tab">
+			<div class="tabs columns small-12 large-10 large-offset-1 js_accordion_container">
+				<div class="row tab-item show js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Project Brief</div>
 					</div>
@@ -227,7 +227,7 @@ $testimonials = get_posts( [
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item js_tab">
+				<div class="row tab-item js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Conceptualisation</div>
 					</div>
@@ -239,7 +239,7 @@ $testimonials = get_posts( [
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item js_tab">
+				<div class="row tab-item js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Implementation</div>
 					</div>
@@ -251,7 +251,7 @@ $testimonials = get_posts( [
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item js_tab">
+				<div class="row tab-item js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Construction</div>
 					</div>
@@ -265,7 +265,7 @@ $testimonials = get_posts( [
 						</div>
 					</div>
 				</div>
-				<div class="row tab-item js_tab">
+				<div class="row tab-item js_accordion">
 					<div class="columns small-12 medium-6">
 						<div class="tab-title fill-off-light button block text-left">Handover</div>
 					</div>
