@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 
-function send ( $to, $subject, $body ) {
+function send ( $to, $subject, $body, $toCC = [ ] ) {
 
 	date_default_timezone_set( 'Asia/Kolkata' );
 
@@ -66,7 +66,7 @@ function send ( $to, $subject, $body ) {
 		// Set who the message is to be sent to
 		$mail->addAddress( $toEmail, '' );
 		if ( ! empty( $toCC ) ) {
-			foreach ( $email as $toCC ) {
+			foreach ( $toCC as $email ) {
 				$mail->addCC( $email, '' );
 			}
 		}
