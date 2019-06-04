@@ -68,7 +68,7 @@ if ( empty( $input[ 'name' ] ) ) {
 }
 if ( empty( $input[ 'location' ] ) ) {
 	$response[ 'statusCode' ] = 4002;
-	$response[ 'message' ] = 'Please provide a project name.';
+	$response[ 'message' ] = 'Please provide a location.';
 	http_response_code( 400 );
 	die( json_encode( $response ) );
 }
@@ -100,7 +100,7 @@ if ( empty( $input[ 'inquiryType' ] ) ) {
  *
  */
 // Phone number
-if ( ! preg_match( '/^\d+$/', $input[ 'phoneNumber' ] ) ) {
+if ( ! preg_match( '/^\+?\d+$/', $input[ 'phoneNumber' ] ) ) {
 	$response[ 'statusCode' ] = 4004;
 	$response[ 'message' ] = 'Please provide a valid phone number.';
 	http_response_code( 400 );
@@ -154,7 +154,6 @@ try {
 	$status = Mailer\send( 'adi@lazaro.in', $subject, $message );
 	$response[ 'statusCode' ] = 0;
 	$response[ 'message' ] = 'Enquiry made.';
-	die( json_encode( $response ) );
 }
 catch ( \Exception $e ) {
 
@@ -168,3 +167,5 @@ catch ( \Exception $e ) {
 	http_response_code( 500 );
 
 }
+// Finally, respond back to the client
+die( json_encode( $response ) );

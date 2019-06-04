@@ -47,7 +47,7 @@ $( document ).on( "submit", ".js_enquiry_form", async function ( event ) {
 	// Name
 	$name.val( $name.val().trim() );
 	// Phone number
-	$phoneNumber.val( $phoneNumber.val().replace( /[^\d\s()-]/g, "" ) );
+	$phoneNumber.val( $phoneNumber.val().replace( /[^\d\s()-+]/g, "" ) );
 	// Email
 	$email.val( $email.val().trim() );
 	// Location
