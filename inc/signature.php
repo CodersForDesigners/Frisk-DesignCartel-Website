@@ -6,6 +6,7 @@
 .signature-section .logo {
 	text-align: center;
 	margin-bottom: var(--space-min);
+	filter: grayscale(0.9);
 }
 .signature-section .logo a {
 	font-size: 0;

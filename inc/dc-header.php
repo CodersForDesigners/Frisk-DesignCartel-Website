@@ -7,7 +7,7 @@
 			</a>
 			<div class="navigation columns small-6 js_navigation_menu"><!-- Add 'show' class toggling/when scrolling up -->
 				<div class="nav-tray fill-light">
-					<a class="link button fill-light strong" href="tel:+919876543210">+ 91 98765 43210</a>
+					<a class="link button fill-light strong" href="tel:+919620036439">+91 96200 36439</a>
 					<a class="link button fill-light" href="<?= $baseURL ?>#services">Services</a>
 					<a class="link button fill-light" href="<?= $baseURL ?>#portfolio">Portfolio</a>
 					<a class="link button fill-light" href="<?= $baseURL ?>#about">About</a>

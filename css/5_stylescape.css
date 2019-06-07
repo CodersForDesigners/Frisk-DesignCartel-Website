@@ -76,7 +76,11 @@
 	}
 }
 
+/* -- Hide Scrollbars -- */
 
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 
 
