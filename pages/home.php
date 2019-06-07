@@ -331,7 +331,7 @@ $testimonials = get_posts( [
 					Karnataka, India
 				</div>
 
-				<a class="block p" href="tel:+919876543210">+91 98765 43210</a>
+				<a class="block p" href="tel:+919620036439">+91 96200 36439</a>
 			</div>
 		</div>
 	</div>
