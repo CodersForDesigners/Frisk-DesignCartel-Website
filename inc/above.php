@@ -11,7 +11,7 @@ require_once __DIR__ . '/lazaro.php';
 /*
  * A version number for versioning assets to invalidate the browser cache
  */
-$ver = '?v=20190509';
+$ver = '?v=20190514_5';
 
 /*
  * Get all the links on the site
