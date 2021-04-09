@@ -12,3 +12,14 @@
  * Global Settings Pages
  */
 require get_template_directory() . '/inc/settings.php';
+
+add_action( 'after_setup_theme', function () {
+
+	/*
+	 *
+	 * Media Settings
+	 *
+	 */
+	add_image_size( 'small', 400, 400, false );
+
+} );
