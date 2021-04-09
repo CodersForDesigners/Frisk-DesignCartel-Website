@@ -33,7 +33,10 @@ foreach ( $projects as $index => $project ) {
 array_splice( $projects, $thisProjectIndex, 1 );
 
 $projectName = $thisProject->post_title;
-$projectFeaturedImage = getContent( '', 'featured_image', $thisProject->ID )[ 'url' ];
+$projectFeaturedImage = getContent( '', 'featured_image', $thisProject->ID );
+$projectFeaturedImageURL = $projectFeaturedImage[ 'sizes' ][ 'large' ]
+							?? $projectFeaturedImage[ 'sizes' ][ 'medium_large' ]
+							?? $projectFeaturedImage[ 'url' ];
 $projectDescription = getContent( '', 'description', $thisProject->ID );
 $projectClient = getContent( '', 'specifics -> client', $thisProject->ID );
 $projectArea = getContent( '', 'specifics -> area', $thisProject->ID );
@@ -58,7 +61,7 @@ $gallery = array_map( function ( $image ) {
 	<!-- Project Cover -->
 	<div class="project-cover">
 		<div class="row cover-image">
-			<div class="block image-bg" style="background-image: url( '<?php echo $projectFeaturedImage . $ver ?>' );"></div>
+			<div class="block image-bg" style="background-image: url( '<?= $projectFeaturedImageURL . $ver ?>' );"></div>
 		</div>
 		<div class="row project-content space-one-top-bottom fill-off-light">
 			<div class="container">
