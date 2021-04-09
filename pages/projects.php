@@ -219,10 +219,16 @@ $gallery = array_map( function ( $image ) {
 		<div class="row carousel space-half-bottom js_carousel_container">
 			<div class="project-list carousel-list text-light js_carousel_content">
 				<?php foreach ( $projects as $project ) : ?>
+					<?php
+						$currentProjectFeaturedImage = getContent( '', 'featured_image', $project->ID );
+						$currentProjectFeaturedImageURL = $currentProjectFeaturedImage[ 'sizes' ][ 'medium_large' ]
+														?? $currentProjectFeaturedImage[ 'sizes' ][ 'large' ]
+														?? $currentProjectFeaturedImage[ 'url' ];
+					?>
 					<a
 						class="project-item carousel-list-item image-bg inline-top js_carousel_item"
 						href="projects/<?php echo $project->post_name ?>"
-						style="background-image: url( '<?php echo getContent( '', 'featured_image', $project->ID )[ 'url' ] . $ver ?>' );"
+						style="background-image: url( '<?= $currentProjectFeaturedImageURL . $ver ?>' );"
 					>
 						<div class="title h5 space-half"><?php echo $project->post_title ?></div>
 					</a>
