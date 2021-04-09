@@ -41,29 +41,17 @@ $projectType = getContent( '', 'specifics -> type', $thisProject->ID );
 $projectLocation = getContent( '', 'specifics -> location', $thisProject->ID );
 $projectPartners = getContent( '', 'specifics -> collaborators', $thisProject->ID );
 $gallery = array_map( function ( $image ) {
-	return $image[ 'url' ];
+	return [
+		'src' => wp_get_attachment_image_url( $image[ 'ID' ], 'large' ),
+		'srcset' => wp_get_attachment_image_srcset( $image[ 'ID' ], 'large' )
+	];
 }, getContent( '', 'gallery', $thisProject->ID ) );
-$oldGallery = getContent( '', 'gallery', $thisProject->ID );
 
 ?>
 
 
 
 
-
-<script type="text/javascript" id="js_init_vars">
-
-	window.__DC = { };
-	__DC.gallery = <?php echo json_encode( $gallery ) ?>;
-
-	$( `<style>
-			.hide-if-js-enabled {
-				display: none !important;
-			}
-		</style>`
-	).insertBefore( "#js_init_vars" )
-
-</script>
 
 <!-- Project Section -->
 <section class="project-section">
@@ -142,72 +130,73 @@ $oldGallery = getContent( '', 'gallery', $thisProject->ID );
 	<!-- Project Gallery -->
 	<script type="text/javascript">
 
-		function loadImage ( image ) {
-			return new Promise( function ( resolve, reject ) {
-				var domImage;
-				if ( typeof image == "string" ) {
-					domImage = document.createElement( "img" );
-					domImage.src = image;
-				}
-				else
-					domImage = image;
-
-				domImage.onload = function ( event ) {
-					return resolve( event );
-				};
-				domImage.onerror = function ( event ) {
-					return reject( event );
-				};
-			} );
-		}
-
 		$( function () {
-			var masonry = $( ".js_gallery_masonry" ).masonry( {
+
+
+
+			/*
+			 *
+			 * ----- Set the gallery section as a Masonry layout
+			 *
+			 */
+			var masonryGallery = $( ".js_gallery_masonry" ).masonry( {
 				horizontalOrder: true,
 				resize: true,
 				stagger: 0
 			} );
-			masonry.on( "layoutComplete", function ( event, bricks ) {
-				var domBrick = bricks.slice( -1 )[ 0 ].element;
-				waitFor( 0.5 ).then( function () {
-					// domBrick.className += " reveal";
-					$( domBrick ).find( "img" ).addClass( "reveal" );
-				} );
+				// On completing the layout process (this is happen multiple times as and when images are completely fetched),
+				// 	fade-slide-in reveal the images that have been loaded so far
+			masonryGallery.on( "layoutComplete", function ( event, bricks ) {
+				var domBricks = bricks.map( function ( brick ) { return brick.element } );
+				$( domBricks ).find( ".js_gallery_image" ).addClass( "reveal" );
 			} );
-			// For smooth adding of gallery images as the load
-			__DC.reLayoutChain = waitFor( 1 );
-		} );
 
-		__DC.gallery.forEach( function ( imageUrl, _i ) {
-			var imageId = "gi_" + ( _i + 1 );
-			loadImage( imageUrl )
-				.then( function ( event ) {
-					$( function () {
-						var $gallery = $( ".js_gallery_masonry" );
-						__DC.reLayoutChain = __DC.reLayoutChain.then( function () {
-							var $brick = $( "#" + imageId ).parent();
-							$brick.appendTo( $gallery );
-							$gallery.masonry( "addItems", $brick );
-							$gallery.masonry( "layout" );
-							return waitFor( 0.25 );
-						} );
-					} );
-				} )
-				.catch( function () {} )
+			/*
+			 *
+			 * ----- Set up the images to be laid out by Masonry once they are completely fetched
+			 *
+			 */
+			var domGalleryImages = Array.prototype.slice.call( document.getElementsByClassName( "js_gallery_image" ) );
+			domGalleryImages.forEach( function ( domImage ) {
+				if ( domImageHasSuccessfullyLoaded( domImage ) )
+					layoutImageInGallery( domImage );
+				else
+					domImage.addEventListener( "load", onImageLoadEventHandler )
+			} );
+
+			function domImageHasSuccessfullyLoaded ( domImage ) {
+				return domImage.complete && domImage.naturalWidth;
+			}
+
+			function onImageLoadEventHandler ( event ) {
+				let domImage = event.target
+
+				if ( ! domImageHasSuccessfullyLoaded( domImage ) )
+					return;
+
+				domImage.removeEventListener( "load", onImageLoadEventHandler )
+				layoutImageInGallery( domImage )
+			}
+
+			/*
+			 * ----- Lays out the given image within the masonry layout
+			 */
+			function layoutImageInGallery ( domImage ) {
+				masonryGallery.masonry( "layout" );
+			}
+
 
 
 		} );
 
 	</script>
+
 	<div class="project-gallery">
 		<div class="row">
 			<div class="container position-relative js_gallery_masonry" style="overflow: hidden; transition: height 0.5s">
-			</div>
-			<div class="container position-relative js_gallery hide-if-js-enabled">
-				<!-- Insert Image Gallery Here -->
-				<?php foreach ( $oldGallery as $index => $image ) : ?>
+				<?php foreach ( $gallery as $image ) : ?>
 					<div class="img-container">
-						<img src="<?php echo $image[ 'url' ] . $ver ?>" id="gi_<?php echo $index + 1 ?>" class="scroll-reveal">
+						<img src="<?= $image[ 'src' ] ?>" srcset="<?= $image[ 'srcset' ] ?>" sizes="(max-width: 300px) 100vw, (max-width: 1040px) 300px, (max-width: 1480px) 500px, 720px" class="scroll-reveal js_gallery_image">
 					</div>
 				<?php endforeach; ?>
 			</div>
